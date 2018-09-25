@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Азаров](https://up.htmlacademy.ru/adaptive/15/user/93764).
-* Наставник: [Байдаров Денис] (https://up.htmlacademy.ru/adaptive/15/user/7956).
+* Наставник: `Неизвестно`.
 
 ---
 
