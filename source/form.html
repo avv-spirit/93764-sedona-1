@@ -23,7 +23,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Welcome - to the gorgeous Sedona</h1>
-      <div class="welcome">
+      <div class="main-image">
         <img src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
       </div>
       <section class="comment">
@@ -32,21 +32,19 @@
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__full-name">
-          <label for="first-name">Имя*</label>
+          <label class="form__content" for="first-name">Имя*</label>
           <input class="form__input" type="text" name="name" id="first-name" value="Петр">
-          <label for="surname">Фамилия</label>
+          <label class="form__content" for="surname">Фамилия</label>
           <input class="form__input" type="text" name="family-name" id="surname" value="Иванов">
-          <label for="patronymic">Отчество</label>
+          <label class="form__content" for="patronymic">Отчество</label>
           <input class="form__input" type="text" name="arrivals" id="patronymic" value="Александрович">
         </div>
         <div class="form__contacts">
           <h3 class="form__title">Контактная информация</h3>
-          <label for="telephone-number"></label>
+          <label class="form__content" for="telephone-number"></label>
           <input class="form__input" type="text" name="telephone" id="telephone-number" value="Введите телефон">
-          <button class="form__phone button--phone" type="button"></button>
-          <label for="e-mail"></label>
+          <label class="form__content" for="e-mail"></label>
           <input class="form__input" type="text" name="mail" id="e-mail" value="Введите e-mail">
-          <button class="form__e-mail button--e-mail" type="button"></button>
         </div>
         <div class="form__radio checkbox--size">
           <fieldset class="form__feeling">
@@ -64,9 +62,6 @@
               <label class="form__content" for="difficult">Затрудняюсь ответить</label>
             </div>
           </fieldset>
-          <form class="">
-
-          </form>
         </div>
         <div class="form__checkbox checkbox--size">
           <fieldset class="form__feeling">
@@ -91,7 +86,7 @@
         </div>
         <div class="form__emotions">
           <h3 class="form__title">Опишите свои эмоции:</h3>
-          <label for="text"></label>
+          <label class="form__content" for="text"></label>
           <input class="form__input" type="text" name="description" id="text" value="Опишите подробно все свои восторги">
           <button class="form__button-find button--find" type="submit" aria-label="Отправить форму отзыва">Отправить отзыв</button>
         </div>
