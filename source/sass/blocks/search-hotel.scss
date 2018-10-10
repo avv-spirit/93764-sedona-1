@@ -1,0 +1,38 @@
+.search-hotel {
+  display: block;
+  width: 320px;
+  min-height: 288px;
+
+  outline: 1px solid red;
+}
+
+.search-hotel__settings {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.search-hotel__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-hotel__fill {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.search-hotel__find-hotel {
+  width: 280px;
+  padding: 18px 47px;
+}
+
+.search-hotel__button {
+  width: 280px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}

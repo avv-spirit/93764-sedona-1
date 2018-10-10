@@ -1,0 +1,21 @@
+.social {
+  display: block;
+
+  outline: 1px solid red;
+}
+
+.page-footer__social {
+  width: 320px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item {
+  color: #ffffff;
+  background-color: #81b3d2;
+}

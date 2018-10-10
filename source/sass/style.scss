@@ -1,3 +1,31 @@
-body { background: lightgray; }
+@import "normalize";
+@import "blocks/main-nav";
+@import "blocks/features";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/page-footer";
+@import "blocks/form";
+@import "blocks/main-reasons";
+@import "blocks/recommendations";
+@import "blocks/main-image";
+@import "scaffolding";
+@import "blocks/search-hotel";
+@import "blocks/map";
+@import "blocks/photo-video";
+@import "blocks/tag";
+@import "blocks/social";
+@import "blocks/copyright";
 
+body {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}

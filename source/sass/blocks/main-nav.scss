@@ -1,0 +1,37 @@
+.main-nav {
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 279px;
+
+  background-color: #ffffff;
+}
+
+.main-nav__toggle {
+  background-color: #81b3d2;
+  color: #ffffff;
+
+  border: none;
+}
+
+.main-nav__wrapper {
+  background-color: #ffffff;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.site-list__item {
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #81b3d2;
+}

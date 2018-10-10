@@ -1,0 +1,21 @@
+.main-reasons {
+  display: block;
+  margin: 0;
+  width: 320px;
+  background-color: #ffffff;
+  outline: 1px solid red;
+}
+
+.main-reasons__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-reasons__description {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-align: center;
+}
