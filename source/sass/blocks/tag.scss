@@ -1,18 +1,22 @@
 .tag {
-  display: block;
-
   outline: 1px solid red;
 }
 
 .page-footer__wrapper {
   width: 320px;
-  background-color: #ffffff;
+  background-color: $white;
 }
-
 
 .page-footer__container {
   width: 320px;
 
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
+}
+
+.tag__text {
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
 }

@@ -4,18 +4,18 @@
   width: 320px;
   min-height: 279px;
 
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .main-nav__toggle {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $nav;
+  color: $white;
 
   border: none;
 }
 
 .main-nav__wrapper {
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .main-nav__list {
@@ -27,11 +27,22 @@
 }
 
 .site-list__item {
-  color: #ffffff;
+  background-color: $nav;
+}
 
-  font-size: 18px;
-  line-height: 40px;
+.site-list__item a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+
+  color: $white;
+
+  font-size: $font-title;
+  line-height: $line-height-fill;
   font-weight: bold;
   text-align: center;
-  background-color: #81b3d2;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
 }

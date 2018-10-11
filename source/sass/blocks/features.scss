@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  min-height: 423px;
   outline: 1px solid red;
 }
 
@@ -11,37 +10,40 @@
   flex-direction: column;
   width: 320px;
   outline: 1px solid red;
-  background-color: #81b3d2;
+
+  color: $white;
+  background-color: $nav;
 }
 
 .features__background {
+  color: $black;
+
   background-color: $features-gray;
 }
 
 .features__image {
   display: flex;
   width: 320px;
-  min-height: 260px;
   outline: 1px solid red;
 }
 
 .features__title {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: $font-title;
+  line-height: $line-height-title;
   text-align: center;
 }
 
 .features__number {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $number-description;
+  line-height: $line-height-desc;
   font-weight: normal;
   text-align: center;
 }
 
 .features__description {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $number-description;
+  line-height: $line-height-desc;
   font-weight: normal;
   text-align: center;
 }

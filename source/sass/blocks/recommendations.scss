@@ -21,16 +21,27 @@
   outline: 1px solid red;
 }
 
+.recommendations__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .recommendations__title {
-  font-size: 18px;
-  line-height: 26px;
+  margin: 0;
+  padding: 0;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
   font-weight: bold;
   text-align: center;
 }
 
 .recommendations__description {
-  font-size: 14px;
-  line-height: 21px;
+  margin: 0;
+  padding: 0;
+
+  font-size: $number-description;
+  line-height: $line-height-desc;
   font-weight: normal;
   text-align: center;
 }

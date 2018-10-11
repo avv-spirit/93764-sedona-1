@@ -8,20 +8,20 @@
 }
 
 .search-hotel__settings {
-  color: #000000;
-  background-color: #ffffff;
+  color: $black;
+  background-color: $white;
 }
 
 .search-hotel__title {
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
   text-align: center;
 }
 
 .search-hotel__fill {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $number-description;
+  line-height: $line-height-fill;
   font-weight: normal;
   text-align: center;
 }
@@ -30,8 +30,13 @@
   width: 280px;
   margin-left: 20px;
   padding: 18px 0;
-  color: #ffffff;
+  color: $white;
 
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
   text-align: center;
-  background-color: #81b3d2;
+
+  text-decoration: none;
+  background-color: $nav;
 }

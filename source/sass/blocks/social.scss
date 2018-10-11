@@ -6,16 +6,31 @@
 
 .page-footer__social {
   width: 320px;
+  margin: 0;
 }
 
 .social__list {
+  display: flex;
+  width: 156px;
   margin: 0;
-  padding: 0;
+  margin-left: 45px;
 
   list-style: none;
 }
 
 .social__item {
-  color: #ffffff;
-  background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
+
+  color: $white;
+
+  background-color: $nav;
+}
+
+.social__link {
+  background-color: $nav;
 }
