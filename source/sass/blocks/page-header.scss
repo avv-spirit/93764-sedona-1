@@ -1,5 +1,6 @@
 .page-header {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   outline: 1px solid red;
 }

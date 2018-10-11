@@ -1,11 +1,13 @@
 .recommendations {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
 }
 
 
 .recommendations__list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
@@ -14,7 +16,8 @@
 }
 
 .recommendations__item {
-  display: block;
+  display: flex;
+  flex-direction: row;
   outline: 1px solid red;
 }
 

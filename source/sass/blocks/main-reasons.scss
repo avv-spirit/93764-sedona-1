@@ -1,6 +1,6 @@
 .main-reasons {
-  display: block;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   background-color: #ffffff;
   outline: 1px solid red;

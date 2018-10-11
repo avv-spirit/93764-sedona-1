@@ -1,20 +1,25 @@
 .features {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   min-height: 423px;
   outline: 1px solid red;
 }
 
 .features__blocks {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  min-height: 423px;
   outline: 1px solid red;
   background-color: #81b3d2;
 }
 
+.features__background {
+  background-color: $features-gray;
+}
+
 .features__image {
-  display: block;
+  display: flex;
   width: 320px;
   min-height: 260px;
   outline: 1px solid red;

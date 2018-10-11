@@ -1,5 +1,6 @@
 .search-hotel {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   min-height: 288px;
 
@@ -25,14 +26,12 @@
   text-align: center;
 }
 
-.search-hotel__find-hotel {
-  width: 280px;
-  padding: 18px 47px;
-}
-
 .search-hotel__button {
   width: 280px;
+  margin-left: 20px;
+  padding: 18px 0;
   color: #ffffff;
 
+  text-align: center;
   background-color: #81b3d2;
 }
