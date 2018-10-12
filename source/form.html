@@ -26,72 +26,81 @@
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Welcome - to the gorgeous Sedona</h1>
-        <div class="main-image">
-          <img src="img/intro-sedona.svg" width="229" height="39" alt="Седона">
+        <div class="main-image main-image--form-photo">
+          <img src="img/text-sedona.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="comment">
           <h3 class="comment__title">Оставьте свой отзыв</h3>
           <p class="comment__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__general">
-            <label class="form__content" for="first-name">Имя*</label>
-            <input class="form__input" type="text" name="name" id="first-name" value="Петр">
-            <label class="form__content" for="surname">Фамилия</label>
-            <input class="form__input" type="text" name="family-name" id="surname" value="Иванов">
-            <label class="form__content" for="patronymic">Отчество</label>
-            <input class="form__input" type="text" name="arrivals" id="patronymic" value="Александрович">
+          <h3 class="form__title">Представьтесь</h3>
+          <div class="form__general form__general--border">
+            <div class="form__wrapper">
+              <label class="form__content" for="first-name">Имя*:</label>
+              <input class="form__input" type="text" name="name" id="first-name" value="Петр">
+            </div>
+            <div class="form__wrapper">
+              <label class="form__content" for="surname">Фамилия*:</label>
+              <input class="form__input" type="text" name="family-name" id="surname" value="Иванов">
+            </div>
+            <div class="form__wrapper">
+              <label class="form__content" for="patronymic">Отчество:</label>
+              <input class="form__input" type="text" name="arrivals" id="patronymic" value="Александрович">
+            </div>
           </div>
           <div class="form__general">
             <h3 class="form__title">Контактная информация</h3>
-            <label class="form__content" for="telephone-number"></label>
+            <label class="form__content" for="telephone-number">Контактный телефон*:</label>
             <input class="form__input" type="text" name="telephone" id="telephone-number" value="Введите телефон">
-            <label class="form__content" for="e-mail"></label>
+            <label class="form__content" for="e-mail">Электронная почта*:</label>
             <input class="form__input" type="text" name="mail" id="e-mail" value="Введите e-mail">
           </div>
-          <div class="form__general checkbox--size">
+          <div class="form__general form__general--size">
             <fieldset class="form__feeling">
-              <legend class="form__legend">Ваше общее впечатление</legend>
-              <div class="form__checkbox checkbox--item">
+              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <div class="form__checkbox form__checkbox--item">
                 <input class="visually-hidden" id="positive" type="radio" checked>
-                <label class="form__content" for="positive">Скорее положительные</label>
+                <label class="form__content form__content--normal" for="positive">Скорее положительные</label>
               </div>
-              <div class="form__checkbox checkbox--item">
+              <div class="form__checkbox form__checkbox--item">
                 <input class="visually-hidden" id="negative" type="radio">
-                <label class="form__content" for="negative">Скорее отрицательные</label>
+                <label class="form__content form__content--normal" for="negative">Скорее отрицательные</label>
               </div>
-              <div class="form__checkbox checkbox--item">
+              <div class="form__checkbox form__checkbox--item">
                 <input class="visually-hidden" id="difficult" type="radio">
-                <label class="form__content" for="difficult">Затрудняюсь ответить</label>
+                <label class="form__content form__content--normal" for="difficult">Затрудняюсь ответить</label>
               </div>
             </fieldset>
           </div>
-          <div class="form__general checkbox--size">
+          <div class="form__general form__general--size">
             <fieldset class="form__feeling">
               <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <div class="form__checkbox-type checkbox--item">
+              <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="bridge" type="checkbox" checked>
-                <label class="form__content" for="bridge">Мост Дьявола</label>
+                <label class="form__content form__content--normal" for="bridge">Мост Дьявола</label>
               </div>
-              <div class="form__checkbox-type checkbox--item">
+              <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="rock-bell" type="checkbox" checked>
-                <label class="form__content" for="rock-bell">Гора-Колокол</label>
+                <label class="form__content form__content--normal" for="rock-bell">Гора-Колокол</label>
               </div>
-              <div class="form__checkbox-type checkbox--item">
+              <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="park" type="checkbox" checked>
-                <label class="form__content" for="park">Слайд-парк</label>
+                <label class="form__content form__content--normal" for="park">Слайд-парк</label>
               </div>
-              <div class="form__checkbox-type checkbox--item">
+              <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="rocks" type="checkbox">
-                <label class="form__content" for="rocks">Красные скалы</label>
+                <label class="form__content form__content--normal" for="rocks">Красные скалы</label>
               </div>
             </fieldset>
           </div>
           <div class="form__general">
             <h3 class="form__title">Опишите свои эмоции:</h3>
-            <label class="form__content" for="text"></label>
-            <input class="form__input" type="text" name="description" id="text" value="Опишите подробно все свои восторги">
-            <button class="form__button-find button--find" type="submit" aria-label="Отправить форму отзыва">Отправить отзыв</button>
+            <div class="form__description">
+              <label class="form__content" for="text"></label>
+              <input class="form__input form__input--emotions" type="text" name="description" id="text" value="Опишите подробно все свои восторги">
+              <button class="form__button-find form__button-find--find" type="submit" aria-label="Отправить форму отзыва">Отправить отзыв</button>
+            </div>
           </div>
         </form>
       </main>
@@ -144,12 +153,14 @@
       <section class="popup">
         <h3 class="popup__title">Что-то пошло не так!</h3>
         <p class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup__close" type="button">Ok</button>
+        <button class="popup__error" type="button">Ok</button>
       </section>
       <section class="popup">
         <h3 class="popup__title">Ваш отзыв отправлен!</h3>
         <p class="popup__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В Ближайшее время мы опубликуем его на сайте.</p>
-        <button class="popup__close" type="button">Закрыть окно</button>
+        <div class="popup__background">
+          <button class="popup__rewiew" type="button">Закрыть окно</button>
+        </div>
       </section>
     </body>
   </div>

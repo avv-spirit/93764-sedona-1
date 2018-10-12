@@ -1,6 +1,103 @@
 .form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 320px;
 
+  background-color: $white;
   outline: 1px solid red;
+}
+
+.form__title {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__general {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  color: $black;
+  background-color: $white;
+  border-bottom: 1px solid $bottom-line;
+}
+
+.form__general--border {
+  border-bottom: 1px solid $bottom-line;
+}
+
+.form__feeling {
+  border: none;
+}
+
+.form__content {
+  font-size: $number-description;
+  line-height: $line-height-title;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.form__content--normal {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form__input {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  background-color: $input-gray;
+  border: none;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.form__legend {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form__button-find {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: 52px 0;
+  padding: 16px 0;
+
+  color: $white;
+
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $nav;
+  border: none;
+}
+
+.form__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.form__input--emotions {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 160px;
+
+  color: $black;
+  background-color: $input-gray;
 }
