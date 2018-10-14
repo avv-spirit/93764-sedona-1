@@ -1,0 +1,73 @@
+.popup {
+  display: none;
+  flex-direction: column;
+  width: 320px;
+
+  color: $black;
+  background-color: $white;
+  outline: 1px solid red;
+}
+
+.popup__title {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  text-align: center;
+}
+
+.popup__description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 210px;
+  font-size: $number-description;
+  line-height: $line-height-fill;
+  font-weight: normal;
+  outline: 1px solid red;
+}
+
+.popup__error {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  padding: 16px 0;
+  width: 180px;
+  height: 58px;
+
+  color: $white;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $nav;
+  border: none;
+}
+
+.popup__rewiew {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 57px;
+  width: 280px;
+  height: 58px;
+
+  color: $white;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $nav;
+  border: none;
+}
+
+.popup__background {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 320px;
+  background-color: $input-gray;
+}

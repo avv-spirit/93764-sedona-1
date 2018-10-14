@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5px;
+
+  outline: 1px solid red;
+}
+
+.page-footer__copyright {
+  width: 320px;
+}
+
+.copyright__text {
+  font-size: $number-description;
+  line-height: $line-height-title;
+  font-weight: normal;
+  text-align: center;
+}
+
+.copyright__logo {
+  padding-top: 10px;
+  padding-left: 10px;
+}

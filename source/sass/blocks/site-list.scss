@@ -1,0 +1,19 @@
+.site-list {
+  width: 320px;
+  min-height: 223px;
+  background-color: lightgray;
+}
+
+.site-list__item {
+  display: block;
+  width: 320px;
+  min-height: 55px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #81b3d2;
+  outline: 1px red;
+}

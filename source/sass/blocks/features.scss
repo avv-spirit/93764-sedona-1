@@ -1,0 +1,49 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  outline: 1px solid red;
+}
+
+.features__blocks {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  outline: 1px solid red;
+
+  color: $white;
+  background-color: $nav;
+}
+
+.features__background {
+  color: $black;
+
+  background-color: $features-gray;
+}
+
+.features__image {
+  display: flex;
+  width: 320px;
+  outline: 1px solid red;
+}
+
+.features__title {
+  font-weight: bold;
+  font-size: $font-title;
+  line-height: $line-height-title;
+  text-align: center;
+}
+
+.features__number {
+  font-size: $number-description;
+  line-height: $line-height-desc;
+  font-weight: normal;
+  text-align: center;
+}
+
+.features__description {
+  font-size: $number-description;
+  line-height: $line-height-desc;
+  font-weight: normal;
+  text-align: center;
+}

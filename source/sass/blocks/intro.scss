@@ -1,0 +1,18 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro__description {
+  font-size: $number-description;
+  line-height: $line-height-fill;
+  font-weight: normal;
+  text-align: center;
+}
