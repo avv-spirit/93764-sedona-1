@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  background-color: $white;
+  outline: 1px solid red;
+}
+
+.page-header__logo-image {
+  outline: 1px solid red;
+}

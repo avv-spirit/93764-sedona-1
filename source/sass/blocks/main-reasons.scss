@@ -1,0 +1,21 @@
+.main-reasons {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: $white;
+  outline: 1px solid red;
+}
+
+.main-reasons__title {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-reasons__description {
+  font-size: $number-description;
+  line-height: $line-height-title;
+  font-weight: normal;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.main-image {
+  width: 320px;
+  min-height: 390px;
+  outline: 1px solid red;
+}
+
+.main-image--mountains {
+  width: 320px;
+  min-height: 160px;
+  background-color: $mountains-bck;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+}
+
+.main-image--form-photo {
+  width: 320px;
+  min-height: 160px;
+  background-color: $mountains-bck;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+}

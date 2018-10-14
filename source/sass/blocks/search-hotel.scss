@@ -1,0 +1,42 @@
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 288px;
+
+  outline: 1px solid red;
+}
+
+.search-hotel__settings {
+  color: $black;
+  background-color: $white;
+}
+
+.search-hotel__title {
+  font-weight: bold;
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  text-align: center;
+}
+
+.search-hotel__fill {
+  font-size: $number-description;
+  line-height: $line-height-fill;
+  font-weight: normal;
+  text-align: center;
+}
+
+.search-hotel__button {
+  width: 280px;
+  margin-left: 20px;
+  padding: 18px 0;
+  color: $white;
+
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+
+  text-decoration: none;
+  background-color: $nav;
+}

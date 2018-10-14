@@ -1,0 +1,24 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  color: $black;
+  background-color: $white;
+  border-bottom: 1px solid $bottom-line;
+  outline: 1px solid red;
+}
+
+.comment__title {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.comment__description {
+  font-size: $number-description;
+  line-height: $line-height-fill;
+  font-weight: normal;
+  text-align: center;
+}
