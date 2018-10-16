@@ -1,17 +1,48 @@
 .main-nav {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 320px;
-  min-height: 279px;
+  min-height: 280px;
 
   background-color: $white;
 }
 
 .main-nav__toggle {
-  background-color: $nav;
-  color: $white;
+  position: absolute;
+  top: 16px;
+  right: 26px;
+  z-index: 2;
 
+  display: block;
+  width: 23px;
+  height: 22px;
+
+  background-color: $nav;
+
+  cursor: pointer;
   border: none;
+  outline: 1px solid red;
+
+  &:hover,
+  &:active {
+    background-color: $nav;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 23px;
+  height: 22px;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-image: url("../../img/icon-cross.svg");
 }
 
 .main-nav__wrapper {
@@ -23,26 +54,43 @@
   padding: 0;
 
   list-style: none;
-  outline: 1px solid red;
 }
 
-.site-list__item {
-  background-color: $nav;
-}
-
-.site-list__item a {
+/*.main-nav__toggle {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  z-index: 1;
   display: block;
-  padding: 12px 21px;
-  padding-bottom: 13px;
-
+  width: 23px;
+  height: 22px;
+  background-color: $nav;
+  background-image: url("../../img/icon-burger.svg");
   color: $white;
 
-  font-size: $font-title;
-  line-height: $line-height-fill;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: $white;
+  }
 }
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 23px;
+  height: 22px;
+
+  background-image: url("../../img/icon-cross.svg");
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}*/

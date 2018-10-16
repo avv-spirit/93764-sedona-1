@@ -46,14 +46,6 @@
   text-transform: none;
 }
 
-.form__input {
-  font-size: $font-title;
-  line-height: $line-height-title;
-  font-weight: bold;
-  background-color: $input-gray;
-  border: none;
-}
-
 .form__wrapper {
   display: flex;
   flex-direction: row;
@@ -90,6 +82,14 @@
   justify-content: center;
   margin: 0 auto;
   width: 280px;
+}
+
+.form__input {
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  background-color: $input-gray;
+  border: none;
 }
 
 .form__input--emotions {
