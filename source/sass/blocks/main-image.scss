@@ -1,14 +1,36 @@
 .main-image {
+  position: relative;
   width: 320px;
-  min-height: 390px;
-  outline: 1px solid red;
+  min-height: 387px;
+  /*outline: 1px solid red;*/
+}
+
+.main-image::before {
+  position: absolute;
+  z-index: 1;
+  top: 362px;
+  left: 0;
+  content: "";
+
+  width: 320px;
+  height: 27px;
+
+  background-repeat: no-repeat;
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
+}
+
+.main-image__slogan {
+  position: absolute;
+  top: 89px;
+  left: 19px;
 }
 
 .main-image--mountains {
   width: 320px;
-  min-height: 160px;
+  min-height: 387px;
   background-color: $mountains-bck;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 0;
 }
 
 .main-image--form-photo {

@@ -11,7 +11,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 16px;
-  right: 26px;
+  left: 271px;
   z-index: 2;
 
   display: block;
@@ -22,7 +22,6 @@
 
   cursor: pointer;
   border: none;
-  outline: 1px solid red;
 
   &:hover,
   &:active {
@@ -34,15 +33,28 @@
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 23px;
+  left: 21px;
 
   width: 23px;
   height: 22px;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
-  background-image: url("../../img/icon-cross.svg");
+  background-image: url("../../img/icon-burger.svg");
+}
+
+.main-nav__cross {
+  fill: $white;
+}
+
+.main-nav__menu {
+  content: "";
+
+  position: absolute;
+  top: 224px;
+  left: 6px;
+  fill: $nav;
 }
 
 .main-nav__wrapper {
@@ -55,42 +67,3 @@
 
   list-style: none;
 }
-
-/*.main-nav__toggle {
-  position: absolute;
-  top: 70px;
-  right: 50px;
-  z-index: 1;
-  display: block;
-  width: 23px;
-  height: 22px;
-  background-color: $nav;
-  background-image: url("../../img/icon-burger.svg");
-  color: $white;
-
-  cursor: pointer;
-  border: none;
-
-  &:hover,
-  &:active {
-    background-color: $white;
-  }
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-
-  position: absolute;
-  top: 15px;
-  left: 17px;
-
-  width: 23px;
-  height: 22px;
-
-  background-image: url("../../img/icon-cross.svg");
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
-}*/
