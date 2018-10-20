@@ -67,3 +67,38 @@
 
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    margin: 0 auto;
+
+    background-color: $white;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    margin: 0 auto;
+
+    color: $black;
+
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+
+    background-color: $white;
+  }
+}
