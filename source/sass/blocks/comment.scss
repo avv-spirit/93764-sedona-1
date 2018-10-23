@@ -4,12 +4,16 @@
   width: 320px;
 
   color: $black;
+
   background-color: $white;
   border-bottom: 1px solid $bottom-line;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .comment__title {
+  margin-bottom: 12px;
+  padding-top: 19px;
+
   font-size: $font-title;
   line-height: $line-height-title;
   font-weight: bold;
@@ -17,6 +21,8 @@
 }
 
 .comment__description {
+  margin-bottom: 17px;
+
   font-size: $number-description;
   line-height: $line-height-fill;
   font-weight: normal;

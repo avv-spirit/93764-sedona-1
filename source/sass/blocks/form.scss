@@ -4,7 +4,7 @@
   width: 320px;
 
   background-color: $white;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .form__title {
@@ -25,25 +25,17 @@
 }
 
 .form__general--border {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   border-bottom: 1px solid $bottom-line;
 }
 
 .form__feeling {
+  margin-top: 18px;
+  margin-bottom: -21px;
+
   border: none;
-}
-
-.form__content {
-  font-size: $number-description;
-  line-height: $line-height-title;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.form__content--normal {
-  font-size: $font-title;
-  line-height: $line-height-title;
-  font-weight: bold;
-  text-transform: none;
 }
 
 .form__wrapper {
@@ -63,7 +55,8 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  margin: 52px 0;
+  margin-top: 48px;
+  margin-bottom: 52px;
   padding: 16px 0;
 
   color: $white;
@@ -85,6 +78,8 @@
 }
 
 .form__input {
+  position: relative;
+
   font-size: $font-title;
   line-height: $line-height-title;
   font-weight: bold;
@@ -100,4 +95,307 @@
 
   color: $black;
   background-color: $input-gray;
+}
+
+.form__wrapper--name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  min-height: 58px;
+
+  outline: 1px solid red;
+}
+
+.form__content--name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 13px;
+
+  outline: 1px solid red;
+}
+
+.form__input--name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+  margin-right: 20px;
+  padding-left: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  width: 100%;
+
+  outline: 1px solid red;
+}
+
+.form__wrapper--surname {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+
+  margin-bottom: 20px;
+  min-height: 58px;
+
+  outline: 1px solid red;
+}
+
+.form__content--surname {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  margin-left: 20px;
+  margin-right: 13px;
+
+  outline: 1px solid red;
+}
+
+.form__input--surname {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+
+  margin-right: 20px;
+  padding-left: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  width: 100%;
+
+  outline: 1px solid red;
+}
+
+.form__wrapper--patronymic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-grow: 1;
+
+  min-height: 58px;
+
+  outline: 1px solid red;
+}
+
+.form__content--patronymic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  margin-left: 20px;
+  margin-right: 18px;
+  flex-grow: 1;
+  outline: 1px solid red;
+}
+
+.form__input--patronymic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  margin-right: 20px;
+  padding-left: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  flex-grow: 1;
+
+  width: 100%;
+
+  outline: 1px solid red;
+}
+
+.form__title--contacts {
+  margin-top: 43px;
+  margin-bottom: 20px;
+}
+
+.form__content--contacts {
+  position: relative;
+
+  margin-left: 42px;
+}
+
+.form__input--contacts {
+  margin-top: 7px;
+  margin-left: 19px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 23px;
+}
+
+.form__content--contacts::before {
+  position: absolute;
+  content: "";
+
+  top: 33px;
+  left: 200px;
+  width: 58px;
+  height: 58px;
+  z-index: 1;
+
+  background-repeat: no-repeat;
+  background-color: $input-phone;
+  background-image: url("../../img/icon-phone.svg");
+  background-position: 50% 50%;
+}
+
+.form__content--mail {
+  position: relative;
+
+  margin-top: 13px;
+  margin-left: 42px;
+}
+
+.form__input--mail {
+  margin-top: 7px;
+  margin-bottom: 27px;
+  margin-left: 19px;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 23px;
+}
+
+.form__content--mail::before {
+  position: absolute;
+  content: "";
+
+  top: 33px;
+  left: 200px;
+  width: 58px;
+  height: 58px;
+  z-index: 1;
+
+  background-repeat: no-repeat;
+  background-color: $input-phone;
+  background-image: url("../../img/icon-mail.svg");
+  background-position: 50% 50%;
+}
+
+.form__content {
+  position: relative;
+  font-size: $number-description;
+  line-height: $line-height-title;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.form__content--normal {
+  position: relative;
+  padding-left: 86px;
+
+  cursor: pointer;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form__content--normal::before {
+  content: "";
+
+  position: absolute;
+  top: -16px;
+  left: 7px;
+  width: 55px;
+  height: 55px;
+
+  background-color: $input-gray;
+  border: 1px solid $input-gray;
+  border-radius: 50%;
+}
+
+.form__checkbox--item {
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+
+.form__checkbox input:checked + .form__content--normal::before {
+  content: "";
+
+  position: absolute;
+  top: 3px;
+  left: 30px;
+
+  width: 15px;
+  height: 15px;
+
+  background-color: #333333;
+  border: 1px solid #333333;
+  border-radius: 50%;
+}
+
+.form__checkbox input:focus + .form__content--normal::before {
+  border-color: red;
+
+  outline: 5px auto;
+}
+
+.form__feeling--position {
+  margin-top: 18px;
+  margin-bottom: -12px;
+}
+
+.form__checkbox-type {
+  margin-top: 26px;
+  margin-bottom: 54px;
+}
+
+.form__content--box {
+  position: relative;
+  padding-left: 86px;
+
+  cursor: pointer;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form__content--box::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 7px;
+  width: 55px;
+  height: 55px;
+
+  background-color: $input-gray;
+  border: 1px solid $input-gray;
+  border-radius: 7px;
+}
+
+.form__checkbox-type input:checked + .form__content--box::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 5px;
+
+  width: 56px;
+  height: 56px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../img/icon-tick.svg");
 }

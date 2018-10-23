@@ -35,7 +35,28 @@
 
 .main-image--form-photo {
   width: 320px;
-  min-height: 160px;
-  background-color: $mountains-bck;
+  min-height: 158px;
+  background-color: $nav;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 100%;
+}
+
+.main-image--form-photo::before {
+  position: absolute;
+  z-index: 1;
+  top: 132px;
+  left: 0;
+  content: "";
+
+  width: 320px;
+  height: 37px;
+
+  background-repeat: no-repeat;
+  background-image: url("../../img/bg-intro-triangle-mobile.svg");
+}
+
+.main-image__form {
+  position: absolute;
+  top: 51px;
+  left: 44px;
 }

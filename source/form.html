@@ -9,14 +9,14 @@
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <a class="main-header-logo" href="index.html" tabindex="0" aria-label="Перейти на Главную страницу">
+        <a class="page-header__logo-image" href="index.html" tabindex="0" aria-label="Перейти на Главную страницу">
           <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__cross" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
+            <!--<svg class="main-nav__cross" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
               <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-            </svg>
+            </svg>-->
             <svg class="main-nav__menu" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 22.928 21.982">
               <g>
                 <rect width="22.928" height="3.964"/>
@@ -39,7 +39,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Welcome - to the gorgeous Sedona</h1>
         <div class="main-image main-image--form-photo">
-          <img src="img/text-sedona.svg" width="229" height="39" alt="Седона">
+          <img class="main-image__form" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
         </div>
         <section class="comment">
           <h3 class="comment__title">Оставьте свой отзыв</h3>
@@ -48,31 +48,31 @@
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="form__title">Представьтесь</h3>
           <div class="form__general form__general--border">
-            <div class="form__wrapper">
-              <label class="form__content" for="first-name">Имя*:</label>
-              <input class="form__input" type="text" name="name" id="first-name" value="Петр">
+            <div class="form__wrapper form__wrapper--name">
+              <label class="form__content form__content--name" for="first-name">Имя*:</label>
+              <input class="form__input form__input--name" type="text" name="name" id="first-name" value="Петр">
             </div>
-            <div class="form__wrapper">
-              <label class="form__content" for="surname">Фамилия*:</label>
-              <input class="form__input" type="text" name="family-name" id="surname" value="Иванов">
+            <div class="form__wrapper form__wrapper--surname">
+              <label class="form__content form__content--surname" for="surname">Фамилия*:</label>
+              <input class="form__input form__input--surname" type="text" name="family-name" id="surname" value="Иванов">
             </div>
-            <div class="form__wrapper">
-              <label class="form__content" for="patronymic">Отчество:</label>
-              <input class="form__input" type="text" name="arrivals" id="patronymic" value="Александрович">
+            <div class="form__wrapper form__wrapper--patronymic">
+              <label class="form__content form__content--patronymic" for="patronymic">Отчество:</label>
+              <input class="form__input form__input--patronymic" type="text" name="arrivals" id="patronymic" value="Александрович">
             </div>
           </div>
           <div class="form__general">
-            <h3 class="form__title">Контактная информация</h3>
-            <label class="form__content" for="telephone-number">Контактный телефон*:</label>
-            <input class="form__input" type="text" name="telephone" id="telephone-number" value="Введите телефон">
-            <label class="form__content" for="e-mail">Электронная почта*:</label>
-            <input class="form__input" type="text" name="mail" id="e-mail" value="Введите e-mail">
+            <h3 class="form__title form__title--contacts">Контактная информация:</h3>
+            <label class="form__content form__content--contacts" for="telephone-number">Контактный телефон*:</label>
+            <input class="form__input form__input--contacts" type="text" name="telephone" id="telephone-number" value="Введите телефон">
+            <label class="form__content form__content--mail" for="e-mail">Электронная почта*:</label>
+            <input class="form__input form__input--mail" type="text" name="mail" id="e-mail" value="Введите e-mail">
           </div>
           <div class="form__general form__general--size">
-            <fieldset class="form__feeling">
+            <fieldset class="form__feeling form__feeling--position">
               <legend class="form__legend">Ваше общее впечатление:</legend>
               <div class="form__checkbox form__checkbox--item">
-                <input class="visually-hidden" id="positive" type="radio" checked>
+                <input class="visually-hidden form__checked" id="positive" type="radio" checked>
                 <label class="form__content form__content--normal" for="positive">Скорее положительные</label>
               </div>
               <div class="form__checkbox form__checkbox--item">
@@ -87,22 +87,22 @@
           </div>
           <div class="form__general form__general--size">
             <fieldset class="form__feeling">
-              <legend class="form__legend">Посещенные достопримечательности:</legend>
+              <legend class="form__legend ">Посещенные достопримечательности:</legend>
               <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="bridge" type="checkbox" checked>
-                <label class="form__content form__content--normal" for="bridge">Мост Дьявола</label>
+                <label class="form__content form__content--box" for="bridge">Мост Дьявола</label>
               </div>
               <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="rock-bell" type="checkbox" checked>
-                <label class="form__content form__content--normal" for="rock-bell">Гора-Колокол</label>
+                <label class="form__content form__content--box" for="rock-bell">Гора-Колокол</label>
               </div>
               <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="park" type="checkbox" checked>
-                <label class="form__content form__content--normal" for="park">Слайд-парк</label>
+                <label class="form__content form__content--box" for="park">Слайд-парк</label>
               </div>
               <div class="form__checkbox-type form__checkbox-type--item">
                 <input class="visually-hidden" id="rocks" type="checkbox">
-                <label class="form__content form__content--normal" for="rocks">Красные скалы</label>
+                <label class="form__content form__content--box" for="rocks">Красные скалы</label>
               </div>
             </fieldset>
           </div>
