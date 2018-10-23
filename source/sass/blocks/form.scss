@@ -55,7 +55,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 50px;
   margin-bottom: 52px;
   padding: 16px 0;
 
@@ -89,12 +89,26 @@
 
 .form__input--emotions {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   min-height: 160px;
 
   color: $black;
   background-color: $input-gray;
+}
+
+.form__text {
+  padding-left: 20px;
+  padding-top: 15px;
+  min-height: 143px;
+
+  font-size: $font-title;
+  line-height: $line-height-title;
+  font-weight: bold;
+  background-color: $input-gray;
+
+  border: none;
 }
 
 .form__wrapper--name {
@@ -102,7 +116,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
+
+  width: 320px;
   margin-top: 3px;
   margin-bottom: 20px;
   min-height: 58px;
@@ -115,9 +130,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
-  margin-left: 20px;
-  margin-right: 13px;
+
+  padding-left: 20px;
 
   outline: 1px solid red;
 }
@@ -127,13 +141,12 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
-  margin-right: 20px;
+
+  margin-left: 13px;
   padding-left: 22px;
   padding-top: 16px;
   padding-bottom: 16px;
-
-  width: 100%;
+  width: 209px;
 
   outline: 1px solid red;
 }
@@ -143,8 +156,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
 
+  width: 320px;
   margin-bottom: 20px;
   min-height: 58px;
 
@@ -157,8 +170,7 @@
   justify-content: flex-start;
   align-items: baseline;
 
-  margin-left: 20px;
-  margin-right: 13px;
+  padding-left: 20px;
 
   outline: 1px solid red;
 }
@@ -168,14 +180,12 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
 
-  margin-right: 20px;
+  margin-left: 13px;
   padding-left: 22px;
   padding-top: 16px;
   padding-bottom: 16px;
-
-  width: 100%;
+  width: 172px;
 
   outline: 1px solid red;
 }
@@ -185,8 +195,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
-  flex-grow: 1;
 
+  width: 320px;
   min-height: 58px;
 
   outline: 1px solid red;
@@ -198,9 +208,8 @@
   justify-content: flex-start;
   align-items: baseline;
 
-  margin-left: 20px;
-  margin-right: 18px;
-  flex-grow: 1;
+  padding-left: 20px;
+
   outline: 1px solid red;
 }
 
@@ -211,13 +220,11 @@
   justify-content: flex-start;
   align-items: baseline;
 
-  margin-right: 20px;
+  margin-left: 17px;
   padding-left: 22px;
   padding-top: 16px;
   padding-bottom: 16px;
-  flex-grow: 1;
-
-  width: 100%;
+  width: 172px;
 
   outline: 1px solid red;
 }
@@ -335,20 +342,19 @@
 
   position: absolute;
   top: 3px;
-  left: 30px;
+  left: 25px;
 
   width: 15px;
   height: 15px;
 
-  background-color: #333333;
-  border: 1px solid #333333;
+  background-color: $dot;
+  border: 3px solid $dot;
   border-radius: 50%;
+  box-shadow: 0 0 0 18px $bottom-line;
 }
 
 .form__checkbox input:focus + .form__content--normal::before {
-  border-color: red;
-
-  outline: 5px auto;
+  border-color: $dot;
 }
 
 .form__feeling--position {
@@ -378,8 +384,8 @@
   position: absolute;
   top: -16px;
   left: 7px;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
 
   background-color: $input-gray;
   border: 1px solid $input-gray;
@@ -390,11 +396,12 @@
   content: "";
   position: absolute;
   top: -16px;
-  left: 5px;
+  left: 7px;
 
   width: 56px;
   height: 56px;
 
+  background-color: $bottom-line;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../img/icon-tick.svg");
