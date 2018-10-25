@@ -156,14 +156,40 @@
   cursor: pointer;
 }
 
-.photo-video__range--max {
+.photo-video__range-toggle--max {
   left: 21%;
 }
 
 .photo-video__buttons {
   position: relative;
+  display: flex;
   margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 12px;
+  padding-bottom: 7px;
   width: 280px;
   height: 46px;
   background-color: $input-gray;
+}
+
+.photo-video__replay {
+  width: 66px;
+
+  background-color: $input-gray;
+  border: none;
+}
+
+.photo-video__subtitles {
+  margin-left: auto;
+  width: 47px;
+
+  background-color: $input-gray;
+  border: none;
+}
+
+.photo-video__size {
+  width: 66px;
+
+  background-color: $input-gray;
+  border: none;
 }

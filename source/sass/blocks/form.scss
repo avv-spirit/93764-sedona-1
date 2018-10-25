@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   width: 320px;
+  padding-bottom: 25px;
   border-bottom: 1px solid $bottom-line;
 }
 
@@ -230,7 +231,7 @@
 }
 
 .form__title--contacts {
-  margin-top: 43px;
+  margin-top: 18px;
   margin-bottom: 20px;
 }
 
