@@ -15,6 +15,15 @@
 }
 
 .tag__text {
+  margin-top: 36px;
+
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tag__text-form {
   margin-top: 21px;
 
   font-size: $line-height-desc;

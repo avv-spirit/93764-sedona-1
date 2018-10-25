@@ -1,9 +1,12 @@
 .intro {
   display: flex;
   flex-direction: column;
+
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .intro__title {
+  margin-top: 37px;
   font-size: $font-title;
   line-height: $line-height-title;
   font-weight: bold;
@@ -11,6 +14,13 @@
 }
 
 .intro__description {
+  display: inline-block;
+  margin-top: 11px;
+  margin-left: 27px;
+  margin-right: 23px;
+  margin-bottom: 27px;
+  width: 270px;
+
   font-size: $number-description;
   line-height: $line-height-fill;
   font-weight: normal;
