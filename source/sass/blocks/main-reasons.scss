@@ -5,7 +5,6 @@
   width: 320px;
   min-height: 190px;
   background-color: $white;
-  outline: 1px solid red;
 }
 
 .main-reasons::before {
@@ -41,4 +40,41 @@
   line-height: $line-height-title;
   font-weight: normal;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-reasons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 190px;
+    background-color: $white;
+  }
+
+  .main-reasons::before {
+    display: none;
+  }
+
+  .main-reasons__title {
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    font-size: $line-height-desc;
+    line-height: $line-height-title;
+    font-weight: bold;
+  }
+
+  .main-reasons__description {
+    margin-top: 28px;
+    margin-bottom: 50px;
+    padding-left: 12px;
+    padding-right: 14px;
+    font-size: $number-description;
+    line-height: $line-height-title;
+    font-weight: normal;
+    text-align: center;
+  }
 }

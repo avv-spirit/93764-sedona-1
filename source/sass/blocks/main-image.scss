@@ -60,3 +60,137 @@
   top: 51px;
   left: 44px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-image {
+    position: relative;
+    width: 768px;
+    min-height: 518px;
+    /*outline: 1px solid red;*/
+  }
+
+  .main-image::before {
+    position: absolute;
+    z-index: 1;
+    top: 461px;
+    left: 0;
+    content: "";
+
+    width: 768px;
+    height: 57px;
+
+    background-repeat: no-repeat;
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .main-image__slogan {
+    position: absolute;
+    top: 77px;
+    left: 154px;
+    width: 460px;
+    height: 350px;
+  }
+
+  .main-image--mountains {
+    width: 768px;
+    min-height: 518px;
+    background-color: $mountains-bck;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 0;
+  }
+
+  .main-image--form-photo {
+    width: 768px;
+    min-height: 290px;
+    background-color: $nav;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%;
+  }
+
+  .main-image--form-photo::before {
+    position: absolute;
+    z-index: 1;
+    top: 132px;
+    left: 0;
+    content: "";
+
+    width: 768px;
+    height: 57px;
+
+    background-repeat: no-repeat;
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+  }
+
+  .main-image__form {
+    position: absolute;
+    top: 51px;
+    left: 44px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-image {
+    position: relative;
+    width: 1200px;
+    min-height: 518px;
+    /*outline: 1px solid red;*/
+  }
+
+  .main-image::before {
+    position: absolute;
+    z-index: 1;
+    top: 461px;
+    left: 0;
+    content: "";
+
+    width: 1200px;
+    height: 57px;
+
+    background-repeat: no-repeat;
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .main-image__slogan {
+    position: absolute;
+    top: 77px;
+    left: 370px;
+    width: 460px;
+    height: 350px;
+  }
+
+  .main-image--mountains {
+    width: 1200px;
+    min-height: 518px;
+    background-color: $mountains-bck;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 0;
+  }
+
+  .main-image--form-photo {
+    width: 1200px;
+    min-height: 290px;
+    background-color: $nav;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 100%;
+  }
+
+  .main-image--form-photo::before {
+    position: absolute;
+    z-index: 1;
+    top: 132px;
+    left: 0;
+    content: "";
+
+    width: 1200px;
+    height: 57px;
+
+    background-repeat: no-repeat;
+    background-image: url("../../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .main-image__form {
+    position: absolute;
+    top: 51px;
+    left: 44px;
+  }
+}

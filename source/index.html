@@ -10,7 +10,7 @@
     <div class="body-wrapper">
       <header class="page-header">
         <a class="page-header__logo-image">
-          <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
+          <img class="page-header__logo-size" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
@@ -48,11 +48,13 @@
         </section>
         <section class="features">
           <div class="features__blocks">
-            <h3 class="features__title features__title--town">Настоящий городок</h3>
-            <p class="features__number">&#8211; №1 &#8211;</p>
-            <p class="features__description features__description--town">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="features__blocks-description">
+              <h3 class="features__title features__title--town">Настоящий городок</h3>
+              <p class="features__number">&#8211; №1 &#8211;</p>
+              <p class="features__description features__description--town">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
             <div class="features__image">
-              <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город">
+              <img class="features__city" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Город">
             </div>
           </div>
         </section>
@@ -76,7 +78,7 @@
                 </g>
               </svg>
               <div class="recommendations__wrapper">
-                <h3 class="recommendations__title">Жильё</h3>
+                <h3 class="recommendations__title">Жилье</h3>
                 <p class="recommendations__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </li>
@@ -86,7 +88,7 @@
               </svg>
               <div class="recommendations__wrapper recommendations__wrapper--gift">
                 <h3 class="recommendations__title">Сувениры</h3>
-                <p class="recommendations__description">Не только китайского, но и местного производства!</p>
+                <p class="recommendations__description recommendations__description--size">Не только китайского, но и местного производства!</p>
               </div>
             </li>
             <li class="recommendations__item recommendations__item--burger">
