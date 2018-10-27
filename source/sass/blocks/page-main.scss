@@ -1,5 +1,18 @@
 .page-main {
   display: flex;
   flex-direction: column;
-  /*outline: 1px solid red;*/
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    display: flex;
+    flex-direction: column;
+  }
 }

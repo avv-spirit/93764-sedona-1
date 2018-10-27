@@ -7,6 +7,74 @@
 }
 
 .map__settings {
-  background-color: #f3f1ed;
+  position: relative;
+
+  background-color: $map-color;
   outline: 1px solid red;
+}
+
+.map__marker {
+  position: absolute;
+  top: 46%;
+  left: 46%;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+
+    outline: none;
+  }
+
+  .map__settings {
+    position: relative;
+    width: 768px;
+    height: 350px;
+
+    background-color: $map-color;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    outline: none;
+  }
+
+  .map__size {
+    display: none;
+  }
+
+  .map__marker {
+    position: absolute;
+    top: 46%;
+    left: 48%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+
+    outline: none;
+  }
+
+  .map__settings {
+    position: relative;
+    width: 1200px;
+    height: 350px;
+
+    background-color: $map-color;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    outline: none;
+  }
+
+  .map__size {
+    display: none;
+  }
+
+  .map__marker {
+    position: absolute;
+    top: 46%;
+    left: 49%;
+  }
 }

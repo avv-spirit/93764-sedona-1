@@ -141,6 +141,16 @@
     background-color: $nav;
   }
 
+  .features__blocks--bridge {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 768px;
+    padding: 0;
+
+    color: $white;
+    background-color: $nav;
+  }
+
   .features__blocks-description {
     display: flex;
     flex-direction: column;
@@ -151,7 +161,6 @@
   .features__image {
     display: flex;
     width: 512px;
-    /*min-height: 256px;*/
   }
 
   .features__city {
@@ -178,5 +187,218 @@
     padding-top: 21px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .features__bridge {
+    width: 512px;
+    height: 256px;
+    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+  }
+
+  .features__title--bridge {
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+
+  .features__description--bridge {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 21px;
+    margin-bottom: 39px;
+  }
+
+  .features__background {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 256px;
+    min-height: 256px;
+
+    color: $black;
+
+    background-color: $input-gray;
+    border-bottom: none;
+  }
+
+  .features__title--area {
+    margin-top: 44px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .features__title--road {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features__title--tourists {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .features__description--area {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+  }
+
+  .features__description--road {
+    margin-top: 22px;
+    margin-bottom: 27px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .features__description--tourists {
+    margin-top: 22px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+
+    outline: none;
+  }
+
+  .features__blocks {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+
+    color: $white;
+    background-color: $nav;
+  }
+
+  .features__blocks--bridge {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    padding: 0;
+
+    color: $white;
+    background-color: $nav;
+  }
+
+  .features__blocks-description {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .features__image {
+    display: flex;
+    width: 800px;
+  }
+
+  .features__city {
+    width: 800px;
+    height: 256px;
+    background-image: url("../../img/main-city-desktop@1x.jpg");
+  }
+
+  .features__title {
+    font-weight: bold;
+    font-size: $line-height-desc;
+    line-height: $line-height-title;
+  }
+
+  .features__title--town {
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 10px;
+  }
+
+  .features__description--town {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .features__bridge {
+    width: 800px;
+    height: 256px;
+    background-image: url("../../img/main-bridge-desktop@1x.jpg");
+  }
+
+  .features__title--bridge {
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+
+  .features__description--bridge {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 21px;
+    margin-bottom: 39px;
+  }
+
+  .features__background {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    min-height: 256px;
+
+    color: $black;
+
+    background-color: $input-gray;
+    border-bottom: none;
+  }
+
+  .features__title--area {
+    margin-top: 44px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .features__title--road {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features__title--tourists {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .features__description--area {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+  }
+
+  .features__description--road {
+    margin-top: 22px;
+    margin-bottom: 27px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .features__description--tourists {
+    margin-top: 22px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

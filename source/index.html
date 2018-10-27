@@ -111,15 +111,17 @@
         </section>
         <section class="features">
           <div class="features__blocks features__blocks--bridge">
-            <h3 class="features__title features__title--bridge">Там есть мост дьявола</h3>
-            <p class="features__number">&#8211; №2 &#8211;</p>
-            <p class="features__description features__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="features__blocks-description">
+              <h3 class="features__title features__title--bridge">Там есть мост дьявола</h3>
+              <p class="features__number">&#8211; №2 &#8211;</p>
+              <p class="features__description features__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <div class="features__image">
-              <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
+              <img class="features__bridge" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост Дьявола">
             </div>
           </div>
         </section>
-        <section class="features">
+        <section class="features features--size">
           <div class="features__blocks features__background">
             <h3 class="features__title features__title--area">Небольшая площадь</h3>
             <p class="features__number">&#8211; №3 &#8211;</p>
@@ -137,12 +139,18 @@
           </div>
         </section>
         <section class="search-hotel search-hotel__settings">
-          <h2 class="search-hotel__title">Заинтересовались?</h2>
-          <p class="search-hotel__fill">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search-hotel__button" href="#" tabindex="0" aria-label="Найти гостиницу">Найти гостиницу</a>
+          <div class="search-hotel__wrapper">
+            <h2 class="search-hotel__title">Заинтересовались?</h2>
+            <p class="search-hotel__fill">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="search-hotel__button" href="#" tabindex="0" aria-label="Найти гостиницу">Найти гостиницу</a>
+          </div>
         </section>
         <div class="map map__settings">
-          <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Мобильная версия карты Седоны">
+          <img class="map__size" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Мобильная версия карты Седоны">
+          <svg class="map__marker" xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27">
+            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+          </svg>
         </div>
       </main>
       <footer class="page-footer">

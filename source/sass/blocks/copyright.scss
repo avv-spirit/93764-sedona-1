@@ -17,3 +17,34 @@
   padding-top: 10px;
   padding-left: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    outline: none;
+  }
+
+  .copyright__text {
+    width: 100px;
+
+    font-size: $number-description;
+    line-height: $line-height-title;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .copyright__logo {
+    padding-top: 10px;
+    padding-left: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    padding-top: 1px;
+    padding-left: 26px;
+  }
+}
