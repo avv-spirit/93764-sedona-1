@@ -7,7 +7,7 @@
   background-color: $white;
 }
 
-.site-list__item {
+.site-list__item--active {
   display: block;
   padding-top: 14px;
   padding-bottom: 16px;
@@ -22,21 +22,38 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  border-top: 1px solid #9ac2db;
-  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid $nav-top;
+  border-bottom: 1px solid $nav-bottom;
   background-color: $nav;
-}
-
-.site-list__item:nth-child(4) {
-  padding-top: 16px;
-  padding-bottom: 13px;
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 21px;
+  padding-right: 21px;
+
   color: $white;
 
-  background-color: $nav;
+  font-size: $font-title;
+  line-height: $line-height-fill;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid $nav-top;
+  border-bottom: 1px solid $nav-bottom;
+  background-color: $nav;
+}
+
+.site-list__link:hover {
+  background-color: $hover-button;
+}
+
+.site-list__link:active {
+  color: $active-color;
+  background-color: $active-button;
 }
 
 @media (min-width: $tablet-width) {
@@ -56,15 +73,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 153px;
     padding: 0;
     padding-top: 15px;
-
-    font-size: $number-description;
-    line-height: $line-height-title;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
+    padding-bottom: 15px;
 
     background-color: $white;
     border: none;
@@ -76,6 +88,9 @@
 
   .site-list__item--active {
     color: $active-brown;
+
+    font-size: $number-description;
+    line-height: $line-height-title;
   }
 
   .site-list__item:nth-child(4n-1) {
@@ -83,18 +98,44 @@
   }
 
   .site-list__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+
     color: $black;
     background-color: $white;
+    border: none;
+
+    font-size: $number-description;
+    line-height: $line-height-title;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   .site-list__link:hover,
   .site-list__link:focus {
     color: $nav;
+    background-color: $white;
+  }
+
+  .site-list__link:active {
+    color: $active-gray;
+    background-color: $white;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     width: 1200px;
+  }
+
+  .site-list__item {
+    width: 240px;
+  }
+
+  .site-list__item:nth-child(4n-1) {
+    margin-left: 245px;
   }
 }

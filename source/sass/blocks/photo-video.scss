@@ -4,7 +4,6 @@
   width: 320px;
 
   background-color: $white;
-  outline: 1px solid red;
 }
 
 .photo-video__description {
@@ -12,20 +11,6 @@
   flex-direction: column;
 
   border-bottom: 1px solid $bottom-line;
-}
-
-.text__title {
-  font-size: $font-title;
-  line-height: $line-height-title;
-  font-weight: bold;
-  text-align: center;
-}
-
-.text__description {
-  font-size: $number-description;
-  line-height: $line-height-fill;
-  font-weight: normal;
-  text-align: center;
 }
 
 .photo-video__blocks {
@@ -192,4 +177,411 @@
 
   background-color: $input-gray;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video {
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+
+    background-color: $white;
+  }
+
+  .photo-video__description {
+    display: flex;
+    flex-direction: column;
+
+    border: none;
+  }
+
+  .photo-video__blocks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 46px;
+    border: none;
+  }
+
+  .photo-video__blocks--sunset {
+    margin: 0;
+    margin-top: 46px;
+  }
+
+  .photo-video__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 1200px;
+  }
+
+  .photo-video__img {
+    padding: 0 20px;
+    padding-top: 23px;
+  }
+
+  .photo-video__img--sunset {
+    padding: 0;
+    width: 768px;
+    height: 400px;
+
+    background-image: url("../../img/photo-sunset-tablet@1x.jpg");
+  }
+
+  .photo-video__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+    padding-bottom: 19px;
+  }
+
+  .photo-video__title {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: bold;
+  }
+
+  .photo-video__author {
+    margin: 0;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .photo-video__doubt {
+    margin-top: 32px;
+    font-size: $font-title;
+    line-height: $line-height-title;
+    text-align: center;
+  }
+
+  .photo-video__desc {
+    display: inline-block;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 26px;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .photo-video__button {
+    margin: 0;
+    padding: 0;
+    width: 23px;
+    height: 20px;
+
+    border: none;
+    background-color: $white;
+  }
+
+  .photo-video__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 7px;
+  }
+
+  .photo-video__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 14px;
+    margin-top: 2px;
+  }
+
+  .photo-video__blocks--plants {
+    margin-bottom: 1px;
+  }
+
+  .photo-video__video {
+    margin-top: 35px;
+  }
+
+  .photo-video__trackbar {
+    position: absolute;
+    top: -45px;
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-video__range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+    margin-top: 22px;
+  }
+
+  .photo-video__scale {
+    margin-left: 8%;
+    width: 235px;
+    height: 3px;
+
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .photo-video__bar {
+    height: 2px;
+  }
+
+  .photo-video__range-toggle {
+    position: absolute;
+    top: -4px;
+    width: 4px;
+    height: 4px;
+
+    background: $white;
+    border: 3px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+
+  .photo-video__range-toggle--max {
+    left: 21%;
+  }
+
+  .photo-video__buttons {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    width: 280px;
+    height: 46px;
+    background-color: $input-gray;
+  }
+
+  .photo-video__replay {
+    width: 66px;
+
+    background-color: $input-gray;
+    border: none;
+  }
+
+  .photo-video__subtitles {
+    margin-left: auto;
+    width: 47px;
+
+    background-color: $input-gray;
+    border: none;
+  }
+
+  .photo-video__size {
+    width: 66px;
+
+    background-color: $input-gray;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+
+    background-color: $white;
+  }
+
+  .photo-video__description {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid $bottom-line;
+  }
+
+  .photo-video__blocks {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 46px;
+    border: none;
+  }
+
+  .photo-video__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 768px;
+  }
+
+  .photo-video__img {
+    padding: 0 20px;
+    padding-top: 23px;
+  }
+
+  .photo-video__img--sunset {
+    padding: 0;
+    width: 1200px;
+    height: 400px;
+
+    background-image: url("../../img/photo-sunset-desktop@1x.jpg");
+  }
+
+  .photo-video__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+    padding-bottom: 19px;
+  }
+
+  .photo-video__title {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: bold;
+  }
+
+  .photo-video__author {
+    margin: 0;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  .photo-video__doubt {
+    margin-top: 32px;
+    font-size: $font-title;
+    line-height: $line-height-title;
+    text-align: center;
+  }
+
+  .photo-video__desc {
+    display: inline-block;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 26px;
+    font-size: $number-description;
+    line-height: $line-height-fill;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .photo-video__button {
+    margin: 0;
+    padding: 0;
+    width: 23px;
+    height: 20px;
+
+    border: none;
+    background-color: $white;
+  }
+
+  .photo-video__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 7px;
+  }
+
+  .photo-video__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 14px;
+    margin-top: 2px;
+  }
+
+  .photo-video__blocks--plants {
+    margin-bottom: 1px;
+  }
+
+  .photo-video__video {
+    margin-top: 35px;
+  }
+
+  .photo-video__trackbar {
+    position: absolute;
+    top: -45px;
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .photo-video__range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+    margin-top: 22px;
+  }
+
+  .photo-video__scale {
+    margin-left: 8%;
+    width: 235px;
+    height: 3px;
+
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .photo-video__bar {
+    height: 2px;
+  }
+
+  .photo-video__range-toggle {
+    position: absolute;
+    top: -4px;
+    width: 4px;
+    height: 4px;
+
+    background: $white;
+    border: 3px solid $white;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+
+  .photo-video__range-toggle--max {
+    left: 21%;
+  }
+
+  .photo-video__buttons {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    width: 280px;
+    height: 46px;
+    background-color: $input-gray;
+  }
+
+  .photo-video__replay {
+    width: 66px;
+
+    background-color: $input-gray;
+    border: none;
+  }
+
+  .photo-video__subtitles {
+    margin-left: auto;
+    width: 47px;
+
+    background-color: $input-gray;
+    border: none;
+  }
+
+  .photo-video__size {
+    width: 66px;
+
+    background-color: $input-gray;
+    border: none;
+  }
 }

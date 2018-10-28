@@ -2,7 +2,6 @@
   position: relative;
   width: 320px;
   min-height: 387px;
-  /*outline: 1px solid red;*/
 }
 
 .main-image::before {
@@ -63,10 +62,8 @@
 
 @media (min-width: $tablet-width) {
   .main-image {
-    position: relative;
     width: 768px;
     min-height: 518px;
-    /*outline: 1px solid red;*/
   }
 
   .main-image::before {
@@ -110,7 +107,7 @@
   .main-image--form-photo::before {
     position: absolute;
     z-index: 1;
-    top: 132px;
+    top: 233px;
     left: 0;
     content: "";
 
@@ -118,13 +115,15 @@
     height: 57px;
 
     background-repeat: no-repeat;
-    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-image: url("../../img/bg-intro-triangle-tablet.svg");
   }
 
   .main-image__form {
     position: absolute;
-    top: 51px;
-    left: 44px;
+    width: 458px;
+    height: 78px;
+    top: 94px;
+    left: 153px;
   }
 }
 
@@ -133,7 +132,6 @@
     position: relative;
     width: 1200px;
     min-height: 518px;
-    /*outline: 1px solid red;*/
   }
 
   .main-image::before {
@@ -177,7 +175,7 @@
   .main-image--form-photo::before {
     position: absolute;
     z-index: 1;
-    top: 132px;
+    top: 244px;
     left: 0;
     content: "";
 
@@ -190,7 +188,7 @@
 
   .main-image__form {
     position: absolute;
-    top: 51px;
-    left: 44px;
+    top: 101px;
+    left: 367px;
   }
 }

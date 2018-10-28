@@ -1,7 +1,5 @@
 .social {
   display: block;
-
-  outline: 1px solid red;
 }
 
 .social__list {
@@ -13,31 +11,46 @@
 }
 
 .social__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 6px;
-  width: 46px;
-  height: 48px;
 
   color: $white;
 
   background-color: $nav;
 }
 
-.social__link {
-  padding-top: 7px;
+.social__item:hover,
+.social__item:focus {
+  background-color: $hover-button;
+}
 
-  background-color: $nav;
+.social__item:active {
+  background-color: $active-button;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $hover-button;
+}
+
+.social__link:active {
+  fill: $active-button;
+  background-color: $active-button;
+}
+
+.social__link:active path {
+  fill: $active-color;
+  background-color: $active-button;
 }
 
 @media (min-width: $tablet-width) {
-  .social {
-    display: block;
-
-    outline: none;
-  }
-
   .social__list {
     display: flex;
     margin-top: 34px;
@@ -45,12 +58,6 @@
     width: 156px;
 
     list-style: none;
-  }
-
-  .social__link {
-    padding-top: 5px;
-
-    background-color: $nav;
   }
 }
 

@@ -2,15 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  outline: 1px solid red;
 }
 
 .features__blocks {
   display: flex;
   flex-direction: column;
   width: 320px;
-
-  /*outline: 1px solid red;*/
 
   color: $white;
   background-color: $nav;
@@ -35,8 +32,6 @@
 .features__image {
   display: flex;
   width: 320px;
-
-  /*outline: 1px solid red;*/
 }
 
 .features__title {
@@ -128,8 +123,6 @@
     display: flex;
     flex-direction: row;
     width: 768px;
-
-    outline: none;
   }
 
   .features__blocks {
@@ -268,8 +261,6 @@
     display: flex;
     flex-direction: row;
     width: 1200px;
-
-    outline: none;
   }
 
   .features__blocks {
@@ -316,17 +307,19 @@
   }
 
   .features__title--town {
-    margin: 0;
-    padding-top: 45px;
+    margin: 0 auto;
+    padding-top: 52px;
     padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .features__description--town {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 21px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .features__bridge {
@@ -336,13 +329,15 @@
   }
 
   .features__title--bridge {
-    margin-top: 44px;
+    margin-top: 53px;
     margin-bottom: 10px;
+    margin-left: 124px;
+    margin-right: 125px;
   }
 
   .features__description--bridge {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 90px;
+    padding-right: 90px;
     margin-top: 21px;
     margin-bottom: 39px;
   }
@@ -362,23 +357,23 @@
 
   .features__title--area {
     margin-top: 44px;
-    margin-bottom: 8px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 9px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .features__title--road {
     margin-top: 44px;
-    margin-bottom: 9px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-bottom: 10px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .features__title--tourists {
     margin-top: 44px;
     margin-bottom: 9px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .features__description--area {
@@ -391,8 +386,8 @@
   .features__description--road {
     margin-top: 22px;
     margin-bottom: 27px;
-    padding-left: 57px;
-    padding-right: 57px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .features__description--tourists {

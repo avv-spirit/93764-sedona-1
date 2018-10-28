@@ -23,7 +23,7 @@
 @media (min-width: $desktop-width) {
   .body-wrapper {
     width: 1200px;
-
+    background-color: $input-gray;
     box-shadow: 0 0 15px 2px #dedede;
   }
 }
