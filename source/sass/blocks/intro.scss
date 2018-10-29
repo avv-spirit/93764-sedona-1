@@ -60,13 +60,14 @@
 @media (min-width: $desktop-width) {
   .intro {
     width: 1200px;
+    min-height: 241px;
   }
 
   .intro__title {
-    margin-top: 75px;
+    margin-top: 112px;
     margin-bottom: 30px;
-    font-size: $interest;
-    line-height: $line-height-title;
+    font-size: 30px;
+    line-height: 26px;
     font-weight: bold;
     text-align: center;
   }
