@@ -15,7 +15,6 @@
   padding: 0;
 
   list-style: none;
-  outline: 1px solid red;
 }
 
 .recommendations__item {
@@ -23,7 +22,6 @@
   flex-direction: row;
   margin-left: 18px;
   margin-top: 25px;
-  outline: 1px solid red;
 }
 
 .recommendations__item--gift {
@@ -40,7 +38,6 @@
   fill: $nav;
   width: 56px;
   height: 37px;
-  outline: 1px solid red;
 }
 
 .recommendations__gift {
@@ -48,7 +45,6 @@
   margin-top: 3px;
   width: 57px;
   height: 37px;
-  outline: 1px solid red;
 }
 
 .recommendations__wrapper--gift {
@@ -65,7 +61,6 @@
   fill: $nav;
   width: 55px;
   height: 35px;
-  outline: 1px solid red;
 }
 
 .recommendations__wrapper {
@@ -109,7 +104,6 @@
     width: 768px;
 
     list-style: none;
-    outline: none;
   }
 
   .recommendations__item {
@@ -118,7 +112,6 @@
     width: 256px;
     margin-left: 0;
     margin-top: 0;
-    outline: none;
   }
 
   .recommendations__item--gift {
@@ -141,7 +134,6 @@
     height: 72px;
 
     fill: $nav;
-    outline: none;
   }
 
   .recommendations__gift {
@@ -151,7 +143,6 @@
     height: 75px;
 
     fill: $nav;
-    outline: none;
   }
 
   .recommendations__burger {
@@ -228,7 +219,6 @@
     width: 1200px;
 
     list-style: none;
-    outline: none;
   }
 
   .recommendations__item {
@@ -237,7 +227,6 @@
     width: 400px;
     margin-left: 0;
     margin-top: 0;
-    outline: none;
   }
 
   .recommendations__item--gift {
@@ -260,7 +249,6 @@
     height: 72px;
 
     fill: $nav;
-    outline: none;
   }
 
   .recommendations__gift {
@@ -270,7 +258,6 @@
     height: 75px;
 
     fill: $nav;
-    outline: none;
   }
 
   .recommendations__burger {
@@ -279,7 +266,6 @@
     fill: $nav;
     width: 77px;
     height: 68px;
-    outline: none;
   }
 
   .recommendations__wrapper--gift {

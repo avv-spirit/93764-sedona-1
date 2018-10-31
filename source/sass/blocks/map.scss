@@ -2,15 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-
-  outline: 1px solid red;
 }
 
 .map__settings {
   position: relative;
 
   background-color: $map-color;
-  outline: 1px solid red;
 }
 
 .map__marker {
@@ -24,8 +21,6 @@
     display: flex;
     flex-direction: column;
     width: 768px;
-
-    outline: none;
   }
 
   .map__settings {
@@ -34,8 +29,7 @@
     height: 350px;
 
     background-color: $map-color;
-    background-image: url("../../img/bg-map-tablet@1x.jpg");
-    outline: none;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 
   .map__size {
@@ -54,8 +48,6 @@
     display: flex;
     flex-direction: column;
     width: 1200px;
-
-    outline: none;
   }
 
   .map__settings {
@@ -64,8 +56,7 @@
     height: 350px;
 
     background-color: $map-color;
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
-    outline: none;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 
   .map__size {

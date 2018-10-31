@@ -5,7 +5,6 @@
   position: relative;
 
   background-color: $white;
-  /*outline: 1px solid red;*/
 }
 
 .page-header__logo-image {
@@ -16,7 +15,6 @@
 
   width: 102px;
   height: 83px;
-  /*outline: 1px solid red;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -40,7 +38,7 @@
     width: 102px;
     height: 83px;
 
-    background-image: url("../../img/logo-sedona-tablet.svg");
+    background-image: url("../img/logo-sedona-tablet.svg");
   }
 
   .page-header__logo-size {
@@ -67,7 +65,7 @@
     top: 0;
     left: 505px;
 
-    background-image: url("../../img/logo-sedona-desktop.svg");
+    background-image: url("../img/logo-sedona-desktop.svg");
   }
 
   .page-header__logo-size {

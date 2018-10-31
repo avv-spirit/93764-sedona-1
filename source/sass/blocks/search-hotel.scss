@@ -56,6 +56,10 @@
   background-color: $active-button;
 }
 
+.search-hotel__wrap {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .search-hotel {
     display: flex;
@@ -114,6 +118,10 @@
 
     text-decoration: none;
     background-color: $nav;
+  }
+
+  .search-hotel__wrap {
+    display: inline;
   }
 }
 
@@ -175,5 +183,9 @@
 
     text-decoration: none;
     background-color: $nav;
+  }
+
+  .search-hotel__wrap {
+    display: inline;
   }
 }
