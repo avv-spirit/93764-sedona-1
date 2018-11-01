@@ -25,6 +25,38 @@
   padding-top: 23px;
 }
 
+.photo-video__sunset {
+  display: none;
+}
+
+.photo-video__sunset-desktop {
+  display: none;
+}
+
+.photo-video__cactus {
+  display: none;
+}
+
+.photo-video__cactus-desktop {
+  display: none;
+}
+
+.photo-video__roads {
+  display: none;
+}
+
+.photo-video__roads-desktop {
+  display: none;
+}
+
+.photo-video__bridge {
+  display: none;
+}
+
+.photo-video__bridge-desktop {
+  display: none;
+}
+
 .photo-video__container {
   display: flex;
   flex-direction: column;
@@ -106,6 +138,14 @@
 
 .photo-video__video {
   margin-top: 35px;
+}
+
+.photo-video__video-tablet {
+  display: none;
+}
+
+.photo-video__video-desktop {
+  display: none;
 }
 
 .photo-video__trackbar {
@@ -232,9 +272,8 @@
   .photo-video__blocks {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    margin-top: 46px;
     border: none;
+    background-color: $input-gray;
   }
 
   .photo-video__blocks--sunset {
@@ -248,7 +287,15 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-bottom: 34px;
     width: 768px;
+  }
+
+  .photo-video__images-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 60px;
   }
 
   .photo-video__img {
@@ -257,19 +304,76 @@
   }
 
   .photo-video__img--sunset {
-    padding: 0;
-    width: 648px;
-    height: 400px;
+    display: none;
+  }
 
-    background-image: url("../img/photo-sunset-tablet@1x.jpg");
+  .photo-video__img--cactus {
+    display: none;
+  }
+
+  .photo-video__img--roads {
+    display: none;
+  }
+
+  .photo-video__img--bridge {
+    display: none;
+  }
+
+  .photo-video__sunset {
+    display: inline-block;
+    width: 648px;
+  }
+
+  .photo-video__sunset-desktop {
+    display: none;
+  }
+
+  .photo-video__cactus {
+    display: inline-block;
+    width: 324px;
+  }
+
+  .photo-video__cactus-desktop {
+    display: none;
+  }
+
+  .photo-video__roads {
+    display: inline-block;
+    width: 324px;
+  }
+
+  .photo-video__roads-desktop {
+    display: none;
+  }
+
+  .photo-video__bridge {
+    display: inline-block;
+    width: 324px;
+  }
+
+  .photo-video__bridge-desktop {
+    display: none;
   }
 
   .photo-video__container {
     display: flex;
     flex-direction: row;
     margin: 0;
+    padding-right: 29px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+  }
+
+  .photo-video__container--sunset {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
     padding: 0 20px;
-    padding-bottom: 19px;
+    padding-bottom: 17px;
+  }
+
+  .photo-video__container--road {
+    background-color: $bck-road;
   }
 
   .photo-video__text-wrapper {
@@ -318,7 +422,11 @@
     height: 20px;
 
     border: none;
-    background-color: $white;
+    background-color: $input-gray;
+  }
+
+  .photo-video__like {
+    background-color: $bck-road;
   }
 
   .photo-video__wrapper {
@@ -339,7 +447,7 @@
   }
 
   .photo-video__blocks--plants {
-    margin-bottom: 1px;
+    margin-bottom: 0;
   }
 
   .photo-video__film {
@@ -347,11 +455,17 @@
   }
 
   .photo-video__video {
+    display: none;
+  }
+
+  .photo-video__video-tablet {
+    display: inline-block;
     margin: 0 auto;
     margin-top: 74px;
-    width: 648px;
-    height: 499px;
-    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  .photo-video__video-desktop {
+    display: none;
   }
 
   .photo-video__trackbar {
@@ -488,7 +602,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 46px;
+    margin-top: 0;
     border: none;
   }
 
@@ -498,7 +612,13 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
+    margin-top: 46px;
+    margin-bottom: 37px;
     width: 1200px;
+  }
+
+  .photo-video__images-wrapper {
+    margin-left: 0;
   }
 
   .photo-video__img {
@@ -506,24 +626,60 @@
     padding-top: 23px;
   }
 
-  .photo-video__img--sunset {
-    padding: 0;
-    width: 1200px;
-    height: 400px;
+  .photo-video__sunset {
+    display: none;
+  }
 
-    background-image: url("../img/photo-sunset-desktop@1x.jpg");
+  .photo-video__sunset-desktop {
+    display: inline-block;
+    width: 1200px;
+  }
+
+  .photo-video__cactus {
+    display: none;
+  }
+
+  .photo-video__cactus-desktop {
+    display: inline-block;
+    width: 400px;
+  }
+
+  .photo-video__roads {
+    display: none;
+  }
+
+  .photo-video__roads-desktop {
+    display: inline-block;
+    width: 400px;
+  }
+
+  .photo-video__bridge {
+    display: none;
+  }
+
+  .photo-video__bridge-desktop {
+    display: inline-block;
+    width: 400px;
   }
 
   .photo-video__container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0 20px;
-    padding-bottom: 19px;
+    flex-direction: row;
+    margin-top: -86px;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-video__container--road {
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photo-video__title {
-    margin-top: 8px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: $number-description;
     line-height: $line-height-fill;
@@ -563,14 +719,14 @@
     height: 20px;
 
     border: none;
-    background-color: $white;
+    background-color: transparent;
   }
 
   .photo-video__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 7px;
+    margin-top: 14px;
   }
 
   .photo-video__text {
@@ -596,6 +752,17 @@
     width: 800px;
     height: 500px;
     background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  .photo-video__video-tablet {
+    display: none;
+  }
+
+  .photo-video__video-desktop {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 72px;
+    width: 800px;
   }
 
   .photo-video__trackbar {
@@ -648,7 +815,7 @@
     display: flex;
     margin: 0 auto;
     margin-top: -105px;
-    margin-bottom: 35px;
+    margin-bottom: 79px;
     padding-top: 12px;
     padding-bottom: 7px;
     width: 800px;
