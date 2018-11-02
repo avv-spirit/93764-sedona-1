@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 768px;
+    padding-bottom: 57px;
 
     color: $black;
 
@@ -67,6 +68,7 @@
     display: flex;
     flex-direction: column;
     width: 1200px;
+    padding-bottom: 42px;
 
     color: $black;
 
@@ -87,6 +89,7 @@
 
   .comment__description {
     margin-bottom: 17px;
+    padding: 0 380px;
 
     font-size: $number-description;
     line-height: $line-height-fill;

@@ -47,8 +47,8 @@
           <p class="comment__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__general form__general--border">
-            <h3 class="form__title">Представьтесь</h3>
+          <div class="form__general form__general--fullname">
+            <h3 class="form__title form__title--tablet-desk">Представьтесь</h3>
             <div class="form__wrapper form__wrapper--name">
               <label class="form__content form__content--name" for="first-name">Имя*:</label>
               <input class="form__input form__input--name" type="text" name="name" id="first-name" value="Петр">
@@ -62,14 +62,16 @@
               <input class="form__input form__input--patronymic" type="text" name="patronymic" id="patronymic" value="Александрович">
             </div>
           </div>
-          <div class="form__general">
-            <h3 class="form__title form__title--contacts">Контактная информация:</h3>
-            <label class="form__content form__content--contacts" for="telephone-number">Контактный телефон*:</label>
-            <input class="form__input form__input--contacts" type="text" name="telephone" id="telephone-number" value="Введите телефон">
-            <label class="form__content form__content--mail" for="e-mail">Электронная почта*:</label>
-            <input class="form__input form__input--mail" type="text" name="mail" id="e-mail" value="Введите e-mail">
+          <div class="form__general form__general--contacts">
+            <div class="form__contacts-wrapper">
+              <h3 class="form__title form__title--contacts">Контактная информация:</h3>
+              <label class="form__content form__content--contacts" for="telephone-number">Контактный телефон*:</label>
+              <input class="form__input form__input--contacts" type="text" name="telephone" id="telephone-number" value="Введите телефон">
+              <label class="form__content form__content--mail" for="e-mail">Электронная почта*:</label>
+              <input class="form__input form__input--mail" type="text" name="mail" id="e-mail" value="Введите e-mail">
+            </div>
           </div>
-          <div class="form__general form__general--size">
+          <div class="form__general form__general--experience">
             <fieldset class="form__feeling form__feeling--position">
               <legend class="form__legend">Ваше общее впечатление:</legend>
               <div class="form__checkbox form__checkbox--item">
@@ -86,34 +88,38 @@
               </div>
             </fieldset>
           </div>
-          <div class="form__general form__general--size">
-            <fieldset class="form__feeling">
-              <legend class="form__legend ">Посещенные достопримечательности:</legend>
-              <div class="form__checkbox-type form__checkbox-type--item">
-                <input class="visually-hidden" id="bridge" type="checkbox" checked>
-                <label class="form__content form__content--box" for="bridge">Мост Дьявола</label>
-              </div>
-              <div class="form__checkbox-type form__checkbox-type--item">
-                <input class="visually-hidden" id="rock-bell" name="box" type="checkbox" checked>
-                <label class="form__content form__content--box" for="rock-bell">Гора-Колокол</label>
-              </div>
-              <div class="form__checkbox-type form__checkbox-type--item">
-                <input class="visually-hidden" id="park" name="box" type="checkbox" checked>
-                <label class="form__content form__content--box" for="park">Слайд-парк</label>
-              </div>
-              <div class="form__checkbox-type form__checkbox-type--item">
-                <input class="visually-hidden" id="rocks" name="box" type="checkbox">
-                <label class="form__content form__content--box" for="rocks">Красные скалы</label>
+          <div class="form__general form__general--attraction">
+            <fieldset class="form__feeling form__feeling--checkbox">
+              <legend class="form__legend form__legend--checkbox">Посещенные достопримечательности:</legend>
+              <div class="form__boxes">
+                <div class="form__checkbox-type form__checkbox-type--item">
+                  <input class="visually-hidden" id="bridge" type="checkbox" checked>
+                  <label class="form__content form__content--box" for="bridge">Мост Дьявола</label>
+                </div>
+                <div class="form__checkbox-type form__checkbox-type--item">
+                  <input class="visually-hidden" id="rock-bell" name="box" type="checkbox" checked>
+                  <label class="form__content form__content--box" for="rock-bell">Гора-Колокол</label>
+                </div>
+                <div class="form__checkbox-type form__checkbox-type--item">
+                  <input class="visually-hidden" id="park" name="box" type="checkbox" checked>
+                  <label class="form__content form__content--box" for="park">Слайд-парк</label>
+                </div>
+                <div class="form__checkbox-type form__checkbox-type--item">
+                  <input class="visually-hidden" id="rocks" name="box" type="checkbox">
+                  <label class="form__content form__content--box" for="rocks">Красные скалы</label>
+                </div>
               </div>
             </fieldset>
           </div>
-          <div class="form__general">
+          <div class="form__general form__general--emotions">
             <h3 class="form__title">Опишите свои эмоции:</h3>
             <div class="form__description">
               <label class="form__content" for="emotions"></label>
               <textarea class="form__text" id="emotions" name="emotions" rows="3" cols="33" maxlength="160">Опишите подробно все свои восторги</textarea>
-              <!--<input class="form__input form__input--emotions" type="text" name="description" id="text" value="Опишите подробно все свои восторги">-->
-              <button class="form__button-find form__button-find--find" type="submit" aria-label="Отправить форму отзыва">Отправить отзыв</button>
+              <div class="form__button-text">
+                <button class="form__button-find form__button-find--find" type="submit" aria-label="Отправить форму отзыва">Отправить отзыв</button>
+                <p class="form__field">* &#8211; обязательные поля</p>
+              </div>
             </div>
           </div>
         </form>

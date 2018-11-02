@@ -63,6 +63,7 @@
   margin: 0;
   padding: 0 20px;
   padding-bottom: 19px;
+  z-index: 1;
 }
 
 .photo-video__film {
@@ -362,6 +363,7 @@
     padding-right: 29px;
     padding-left: 20px;
     padding-bottom: 17px;
+    z-index: 1;
   }
 
   .photo-video__container--sunset {
@@ -671,6 +673,7 @@
     padding-bottom: 17px;
     color: $white;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
   }
 
   .photo-video__container--road {
