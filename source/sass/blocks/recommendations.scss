@@ -88,26 +88,24 @@
   text-align: left;
 }
 
+.recomendations__wrap {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .recommendations {
-    display: flex;
     flex-direction: row;
     width: 768px;
     padding-bottom: 0;
-    background-color: $white;
   }
 
   .recommendations__list {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     width: 768px;
-
-    list-style: none;
   }
 
   .recommendations__item {
-    display: flex;
     flex-direction: column;
     width: 256px;
     margin-left: 0;
@@ -117,7 +115,6 @@
   .recommendations__item--gift {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
     order: 3;
   }
 
@@ -132,8 +129,6 @@
     padding-top: 60px;
     width: 75px;
     height: 72px;
-
-    fill: $nav;
   }
 
   .recommendations__gift {
@@ -141,23 +136,18 @@
     padding-top: 57px;
     width: 64px;
     height: 75px;
-
-    fill: $nav;
   }
 
   .recommendations__burger {
     margin: 0 auto;
     padding-top: 63px;
-    fill: $nav;
     width: 77px;
     height: 68px;
-    outline: none;
   }
 
   .recommendations__wrapper--gift {
     display: flex;
     flex-direction: column;
-    margin-top: 4px;
     width: 170px;
   }
 
@@ -167,8 +157,6 @@
   }
 
   .recommendations__wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: baseline;
     width: 158px;
     margin: 0 auto;
@@ -180,19 +168,14 @@
     padding-top: 28px;
 
     font-size: $line-height-desc;
-    line-height: $line-height-title;
-    font-weight: bold;
   }
 
   .recommendations__description {
     display: inline-block;
     width: 158px;
-    margin-top: 8px;
     margin-left: 0;
     padding-top: 12px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
+
     text-align: center;
   }
 
@@ -204,115 +187,37 @@
 
 @media (min-width: $desktop-width) {
   .recommendations {
-    display: flex;
-    flex-direction: row;
     width: 1200px;
     min-height: 330px;
-    padding-bottom: 0;
-    background-color: $white;
   }
 
   .recommendations__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     width: 1200px;
-
-    list-style: none;
   }
 
   .recommendations__item {
-    display: flex;
-    flex-direction: column;
     width: 400px;
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .recommendations__item--gift {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    order: 3;
-  }
-
-  .recommendations__item--burger {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .recommendations__home {
-    margin: 0 auto;
-    padding-top: 60px;
-    width: 75px;
-    height: 72px;
-
-    fill: $nav;
-  }
-
-  .recommendations__gift {
-    margin: 0 auto;
-    padding-top: 57px;
-    width: 64px;
-    height: 75px;
-
-    fill: $nav;
-  }
-
-  .recommendations__burger {
-    margin: 0 auto;
-    padding-top: 63px;
-    fill: $nav;
-    width: 77px;
-    height: 68px;
   }
 
   .recommendations__wrapper--gift {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
     width: 294px;
   }
 
-  .recommendations__wrapper--burger {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .recommendations__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
     width: 290px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-  }
-
-  .recommendations__title {
-    margin: 0 auto;
-    padding-top: 28px;
-
-    font-size: $line-height-desc;
-    line-height: $line-height-title;
-    font-weight: bold;
   }
 
   .recommendations__description {
-    display: inline-block;
     width: 290px;
-    margin-top: 8px;
-    margin-left: 0;
-    padding-top: 12px;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: normal;
-    text-align: center;
   }
 
   .recommendations__description--size {
     width: 220px;
     margin: 0 auto;
     margin-top: 8px;
+  }
+
+  .recomendations__wrap {
+    display: inline;
   }
 }

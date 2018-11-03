@@ -206,7 +206,10 @@
 }
 
 .photo-video__replay {
-  width: 66px;
+  margin-left: 19px;
+  margin-top: 9px;
+  width: 16px;
+  height: 20px;
 
   fill: $trackbar-mobile;
   background-color: $input-gray;
@@ -223,7 +226,9 @@
 
 .photo-video__subtitles {
   margin-left: auto;
-  width: 47px;
+  margin-top: 10px;
+  width: 32px;
+  height: 20px;
 
   fill: $trackbar-mobile;
   background-color: $input-gray;
@@ -239,7 +244,11 @@
 }
 
 .photo-video__size {
-  width: 66px;
+  margin-top: 10px;
+  margin-left: 31px;
+  margin-right: 29px;
+  width: 20px;
+  height: 20px;
 
   fill: $trackbar-mobile;
   background-color: $input-gray;
@@ -256,23 +265,14 @@
 
 @media (min-width: $tablet-width) {
   .photo-video {
-    display: flex;
-    flex-direction: column;
     width: 768px;
-
-    background-color: $white;
   }
 
   .photo-video__description {
-    display: flex;
-    flex-direction: column;
-
     border: none;
   }
 
   .photo-video__blocks {
-    display: flex;
-    flex-direction: column;
     border: none;
     background-color: $input-gray;
   }
@@ -288,7 +288,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-bottom: 34px;
+    margin-bottom: 57px;
     width: 768px;
   }
 
@@ -297,11 +297,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 60px;
-  }
-
-  .photo-video__img {
-    padding: 0 20px;
-    padding-top: 23px;
   }
 
   .photo-video__img--sunset {
@@ -357,13 +352,10 @@
   }
 
   .photo-video__container {
-    display: flex;
     flex-direction: row;
-    margin: 0;
     padding-right: 29px;
     padding-left: 20px;
     padding-bottom: 17px;
-    z-index: 1;
   }
 
   .photo-video__container--sunset {
@@ -385,45 +377,18 @@
 
   .photo-video__title {
     margin-top: 9px;
-    margin-bottom: 0;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: bold;
-  }
-
-  .photo-video__author {
-    margin: 0;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-transform: none;
   }
 
   .photo-video__doubt {
-    margin-top: 32px;
     font-size: $interest;
-    line-height: $line-height-title;
-    text-align: center;
   }
 
   .photo-video__desc {
-    display: inline-block;
     width: 420px;
-    margin: 0 auto;
     margin-top: 31px;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-align: center;
   }
 
   .photo-video__button {
-    margin: 0;
-    padding: 0;
-    width: 23px;
-    height: 20px;
-
-    border: none;
     background-color: $input-gray;
   }
 
@@ -432,18 +397,11 @@
   }
 
   .photo-video__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     margin-left: auto;
     margin-top: 22px;
   }
 
   .photo-video__text {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0;
     margin-left: 9px;
     margin-top: 2px;
   }
@@ -466,49 +424,16 @@
     margin-top: 74px;
   }
 
-  .photo-video__video-desktop {
-    display: none;
-  }
-
   .photo-video__trackbar {
-    position: absolute;
     top: 12px;
     width: 648px;
     height: 93px;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  .photo-video__range-controls {
-    position: relative;
-
-    margin-bottom: 32px;
-    margin-top: 22px;
   }
 
   .photo-video__scale {
     margin-left: 93px;
     margin-top: 45px;
     width: 390px;
-    height: 3px;
-
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  .photo-video__bar {
-    height: 2px;
-  }
-
-  .photo-video__range-toggle {
-    position: absolute;
-    top: -4px;
-    width: 4px;
-    height: 4px;
-
-    background: $white;
-    border: 3px solid $white;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
   }
 
   .photo-video__range-toggle--max {
@@ -516,21 +441,18 @@
   }
 
   .photo-video__buttons {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
     margin-top: -105px;
     margin-bottom: 35px;
-    padding-top: 12px;
-    padding-bottom: 7px;
     width: 648px;
     height: 93px;
     background-color: transparent;
   }
 
   .photo-video__replay {
-    margin-left: 10px;
-    width: 66px;
+    margin-left: 28px;
+    margin-top: 34px;
+    width: 16px;
+    height: 20px;
 
     z-index: 2;
     fill: $white;
@@ -547,14 +469,12 @@
   }
 
   .photo-video__subtitles {
-    margin-left: auto;
-    width: 47px;
-    margin-right: 6px;
+    margin-right: 22px;
+    margin-top: 35px;
 
     z-index: 2;
     fill: $white;
     background-color: transparent;
-    border: none;
   }
 
   .photo-video__subtitles:hover {
@@ -566,13 +486,13 @@
   }
 
   .photo-video__size {
-    width: 54px;
-    margin-right: 24px;
+    margin-top: 35px;
+    margin-left: 9px;
+    margin-right: 49px;
 
     z-index: 2;
     fill: $white;
     background-color: transparent;
-    border: none;
   }
 
   .photo-video__size:hover {
@@ -586,46 +506,21 @@
 
 @media (min-width: $desktop-width) {
   .photo-video {
-    display: flex;
-    flex-direction: column;
     width: 1200px;
-
-    background-color: $white;
-  }
-
-  .photo-video__description {
-    display: flex;
-    flex-direction: column;
-
-    border-bottom: 1px solid $bottom-line;
   }
 
   .photo-video__blocks {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
-    margin-top: 0;
-    border: none;
   }
 
   .photo-video__images {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-content: flex-start;
     margin-top: 46px;
-    margin-bottom: 37px;
+    margin-bottom: 69px;
     width: 1200px;
   }
 
   .photo-video__images-wrapper {
     margin-left: 0;
-  }
-
-  .photo-video__img {
-    padding: 0 20px;
-    padding-top: 23px;
   }
 
   .photo-video__sunset {
@@ -665,12 +560,9 @@
   }
 
   .photo-video__container {
-    flex-direction: row;
     margin-top: -86px;
     margin-bottom: 0;
-    padding-left: 20px;
     padding-top: 15px;
-    padding-bottom: 17px;
     color: $white;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
@@ -683,50 +575,13 @@
 
   .photo-video__title {
     margin-top: 0;
-    margin-bottom: 0;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: bold;
-  }
-
-  .photo-video__author {
-    margin: 0;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-transform: none;
-  }
-
-  .photo-video__doubt {
-    margin-top: 32px;
-    font-size: $interest;
-    line-height: $line-height-title;
-    text-align: center;
-  }
-
-  .photo-video__desc {
-    display: inline-block;
-    width: 420px;
-    margin: 0 auto;
-    margin-top: 31px;
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-align: center;
   }
 
   .photo-video__button {
-    margin: 0;
-    padding: 0;
-    width: 23px;
-    height: 20px;
-
-    border: none;
     background-color: transparent;
   }
 
   .photo-video__wrapper {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 14px;
@@ -769,44 +624,12 @@
   }
 
   .photo-video__trackbar {
-    position: absolute;
-    top: 12px;
     width: 800px;
     height: 93px;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-
-  .photo-video__range-controls {
-    position: relative;
-
-    margin-bottom: 32px;
-    margin-top: 22px;
   }
 
   .photo-video__scale {
-    margin-left: 93px;
-    margin-top: 45px;
     width: 540px;
-    height: 3px;
-
-    background: rgba(255, 255, 255, 0.2);
-  }
-
-  .photo-video__bar {
-    height: 2px;
-  }
-
-  .photo-video__range-toggle {
-    position: absolute;
-    top: -4px;
-    width: 4px;
-    height: 4px;
-
-    background: $white;
-    border: 3px solid $white;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
   }
 
   .photo-video__range-toggle--max {
@@ -814,46 +637,7 @@
   }
 
   .photo-video__buttons {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    margin-top: -105px;
     margin-bottom: 79px;
-    padding-top: 12px;
-    padding-bottom: 7px;
     width: 800px;
-    height: 93px;
-    background-color: transparent;
-  }
-
-  .photo-video__replay {
-    margin-left: 10px;
-    width: 66px;
-
-    z-index: 2;
-    fill: $white;
-    background-color: transparent;
-    border: none;
-  }
-
-  .photo-video__subtitles {
-    margin-left: auto;
-    width: 47px;
-    margin-right: 6px;
-
-    z-index: 2;
-    fill: $white;
-    background-color: transparent;
-    border: none;
-  }
-
-  .photo-video__size {
-    width: 54px;
-    margin-right: 24px;
-
-    z-index: 2;
-    fill: $white;
-    background-color: transparent;
-    border: none;
   }
 }

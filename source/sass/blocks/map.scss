@@ -18,28 +18,18 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    display: flex;
-    flex-direction: column;
     width: 768px;
   }
 
   .map__settings {
-    position: relative;
     width: 768px;
     height: 350px;
 
-    background-color: $map-color;
     background-image: url("../img/bg-map-tablet@1x.jpg");
   }
 
   .map__size {
     display: none;
-  }
-
-  .map__marker {
-    position: absolute;
-    top: 46%;
-    left: 48%;
   }
 }
 
@@ -51,21 +41,8 @@
   }
 
   .map__settings {
-    position: relative;
     width: 1200px;
-    height: 350px;
 
-    background-color: $map-color;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-  }
-
-  .map__size {
-    display: none;
-  }
-
-  .map__marker {
-    position: absolute;
-    top: 46%;
-    left: 49%;
   }
 }

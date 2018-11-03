@@ -31,27 +31,18 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    display: flex;
     flex-direction: row;
     width: 768px;
     height: 120px;
-
-    outline: none;
   }
 
   .page-footer__wrapper {
-    display: flex;
     flex-direction: row;
     width: 768px;
-
-    background-color: $white;
   }
 
   .page-footer__container {
     width: 256px;
-
-    color: $black;
-    background-color: $white;
   }
 
   .page-footer__social {
@@ -67,33 +58,22 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    display: flex;
-    flex-direction: row;
     width: 1200px;
   }
 
   .page-footer__wrapper {
-    display: flex;
-    flex-direction: row;
     width: 1200px;
-
-    background-color: $white;
   }
 
   .page-footer__container {
     width: 400px;
-
-    color: $black;
-    background-color: $white;
   }
 
   .page-footer__social {
     width: 400px;
-    margin: 0;
   }
 
   .page-footer__copyright {
-    margin-top: 30px;
     width: 400px;
   }
 }

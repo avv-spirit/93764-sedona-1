@@ -124,18 +124,13 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    display: flex;
     flex-direction: row;
     width: 768px;
   }
 
   .features__blocks {
-    display: flex;
     flex-direction: row;
     width: 768px;
-
-    color: $white;
-    background-color: $nav;
   }
 
   .features__blocks--bridge {
@@ -156,7 +151,6 @@
   }
 
   .features__image {
-    display: flex;
     width: 512px;
   }
 
@@ -167,9 +161,7 @@
   }
 
   .features__title {
-    font-weight: bold;
     font-size: $line-height-desc;
-    line-height: $line-height-title;
   }
 
   .features__title--town {
@@ -201,25 +193,18 @@
     padding-left: 0;
     padding-right: 0;
     margin-top: 21px;
-    margin-bottom: 39px;
   }
 
   .features__background {
-    display: flex;
     flex-direction: column;
-    margin: 0 auto;
     width: 256px;
     min-height: 256px;
 
-    color: $black;
-
-    background-color: $input-gray;
     border-bottom: none;
   }
 
   .features__title--area {
     margin-top: 44px;
-    margin-bottom: 8px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -242,7 +227,6 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 9px;
-    padding-bottom: 15px;
   }
 
   .features__description--road {
@@ -266,28 +250,15 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    display: flex;
-    flex-direction: row;
     width: 1200px;
   }
 
   .features__blocks {
-    display: flex;
-    flex-direction: row;
     width: 1200px;
-
-    color: $white;
-    background-color: $nav;
   }
 
   .features__blocks--bridge {
-    display: flex;
-    flex-direction: row-reverse;
     width: 1200px;
-    padding: 0;
-
-    color: $white;
-    background-color: $nav;
   }
 
   .features__blocks-description {

@@ -30,14 +30,9 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    display: flex;
-    flex-direction: column;
     width: 768px;
     padding-bottom: 57px;
 
-    color: $black;
-
-    background-color: $white;
     border-bottom: 0;
   }
 
@@ -47,53 +42,25 @@
     padding-top: 0;
 
     font-size: $interest;
-    line-height: $line-height-title;
-    font-weight: bold;
-    text-align: center;
   }
 
   .comment__description {
-    margin-bottom: 17px;
     padding: 0 162px;
-
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment {
-    display: flex;
-    flex-direction: column;
     width: 1200px;
     padding-bottom: 42px;
-
-    color: $black;
-
-    background-color: $white;
-    border-bottom: 0;
   }
 
   .comment__title {
     margin-bottom: 16px;
     margin-top: 112px;
-    padding-top: 0;
-
-    font-size: $interest;
-    line-height: $line-height-title;
-    font-weight: bold;
-    text-align: center;
   }
 
   .comment__description {
-    margin-bottom: 17px;
     padding: 0 380px;
-
-    font-size: $number-description;
-    line-height: $line-height-fill;
-    font-weight: normal;
-    text-align: center;
   }
 }

@@ -63,17 +63,21 @@
             </div>
           </div>
           <div class="form__general form__general--contacts">
+            <h3 class="form__title form__title--contacts">Контактная информация:</h3>
             <div class="form__contacts-wrapper">
-              <h3 class="form__title form__title--contacts">Контактная информация:</h3>
-              <label class="form__content form__content--contacts" for="telephone-number">Контактный телефон*:</label>
-              <input class="form__input form__input--contacts" type="text" name="telephone" id="telephone-number" value="Введите телефон">
-              <label class="form__content form__content--mail" for="e-mail">Электронная почта*:</label>
-              <input class="form__input form__input--mail" type="text" name="mail" id="e-mail" value="Введите e-mail">
+              <div class="form__input-box">
+                <label class="form__content form__content--contacts" for="telephone-number"><span class="form__content--hidden">Контактный</span> телефон*:</label>
+                <input class="form__input form__input--contacts" type="text" name="telephone" id="telephone-number" value="Введите телефон">
+              </div>
+              <div class="form__input-box">
+                <label class="form__content form__content--mail" for="e-mail">Электронная почта*:</label>
+                <input class="form__input form__input--mail" type="text" name="mail" id="e-mail" value="Введите e-mail">
+              </div>
             </div>
           </div>
           <div class="form__general form__general--experience">
             <fieldset class="form__feeling form__feeling--position">
-              <legend class="form__legend">Ваше общее впечатление:</legend>
+              <legend class="form__legend form__legend--experience">Ваше общее впечатление:</legend>
               <div class="form__checkbox form__checkbox--item">
                 <input class="visually-hidden form__checked" id="positive" name="radio" type="radio" checked>
                 <label class="form__content form__content--normal" for="positive">Скорее положительные</label>
@@ -90,7 +94,9 @@
           </div>
           <div class="form__general form__general--attraction">
             <fieldset class="form__feeling form__feeling--checkbox">
-              <legend class="form__legend form__legend--checkbox">Посещенные достопримечательности:</legend>
+              <div class="form__legend-lines">
+                <legend class="form__legend form__legend--checkbox">Посещенные достопримечательности:</legend>
+              </div>
               <div class="form__boxes">
                 <div class="form__checkbox-type form__checkbox-type--item">
                   <input class="visually-hidden" id="bridge" type="checkbox" checked>
@@ -104,7 +110,7 @@
                   <input class="visually-hidden" id="park" name="box" type="checkbox" checked>
                   <label class="form__content form__content--box" for="park">Слайд-парк</label>
                 </div>
-                <div class="form__checkbox-type form__checkbox-type--item">
+                <div class="form__checkbox-type form__checkbox-type--item form__checkbox--rocks">
                   <input class="visually-hidden" id="rocks" name="box" type="checkbox">
                   <label class="form__content form__content--box" for="rocks">Красные скалы</label>
                 </div>
@@ -112,7 +118,7 @@
             </fieldset>
           </div>
           <div class="form__general form__general--emotions">
-            <h3 class="form__title">Опишите свои эмоции:</h3>
+            <h3 class="form__title form__title--emotions">Опишите свои эмоции:</h3>
             <div class="form__description">
               <label class="form__content" for="emotions"></label>
               <textarea class="form__text" id="emotions" name="emotions" rows="3" cols="33" maxlength="160">Опишите подробно все свои восторги</textarea>
