@@ -31,6 +31,10 @@
   .map__size {
     display: none;
   }
+
+  .map__marker {
+    left: 48%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -44,5 +48,9 @@
     width: 1200px;
 
     background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  .map__marker {
+    left: 49%;
   }
 }

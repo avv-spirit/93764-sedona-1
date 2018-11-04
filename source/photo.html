@@ -48,10 +48,10 @@
           </div>
           <div class="photo-video__images">
             <div class="photo-video__blocks photo-video__blocks--sunset">
-              <picture href="img/photo1.jpg" tabindex="0" aria-label="Фотография заката">
-                <img class="photo-video__img photo-video__img--sunset" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Sunset">
-                <img class="photo-video__sunset" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400" alt="Sunset">
-                <img class="photo-video__sunset-desktop" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Sunset">
+              <picture class="photo-video__sunset-img" tabindex="0" aria-label="Фотография заката">
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                <img src="img/photo-sunset-mobile@1x.jpg" alt="Sunset">
               </picture>
               <div class="photo-video__container photo-video__container--sunset">
                 <div class="photo-video__text-wrapper">
@@ -60,11 +60,11 @@
                 </div>
                 <div class="photo-video__wrapper">
                   <button class="photo-video__button" type="button">
-                    <svg width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
+                    <svg class="photo-video__svg-color" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
                       <g id="Page-1">
                         <g id="Core_1" transform="translate(-295.000000, -464.000000)">
                           <g id="thumb-up_1" transform="translate(295.000000, 464.000000)">
-                            <path id="Shape-1" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                            <path id="Shape-1" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
                           </g>
                         </g>
                       </g>
@@ -76,10 +76,10 @@
             </div>
             <div class="photo-video__images-wrapper">
               <div class="photo-video__blocks photo-video__blocks--plants">
-                <picture href="img/photo2.jpg" tabindex="0" aria-label="Фотография растительности">
-                  <img class="photo-video__img photo-video__img--cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="plants">
-                  <img class="photo-video__cactus" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="plants">
-                  <img class="photo-video__cactus-desktop" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="plants">
+                <picture class="photo-video__cactus-img" tabindex="0" aria-label="Фотография растительности">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                  <img src="img/photo-cactus-mobile@1x.jpg" alt="plants">
                 </picture>
                 <div class="photo-video__container">
                   <div class="photo-video__text-wrapper">
@@ -88,11 +88,11 @@
                   </div>
                   <div class="photo-video__wrapper">
                     <button class="photo-video__button" type="button">
-                      <svg width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
+                      <svg class="photo-video__svg-color" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
                         <g id="Page-2">
                           <g id="Core_2" transform="translate(-295.000000, -464.000000)">
                             <g id="thumb-up_2" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape-2" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                              <path id="Shape-2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
                             </g>
                           </g>
                         </g>
@@ -102,11 +102,11 @@
                   </div>
                 </div>
               </div>
-              <div class="photo-video__blocks">
-                <picture href="img/photo3.jpg" tabindex="0" aria-label="Фотография дороги">
-                  <img class="photo-video__img photo-video__img--roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="roads">
-                  <img class="photo-video__roads" src="img/photo-roads-tablet@1x.jpg" width="324" height="267" alt="roads">
-                  <img class="photo-video__roads-desktop" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="roads">
+              <div class="photo-video__blocks photo-video__blocks--roads">
+                <picture class="photo-video__roads-img" tabindex="0" aria-label="Фотография дороги">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                  <img src="img/photo-roads-mobile@1x.jpg" alt="roads">
                 </picture>
                 <div class="photo-video__container photo-video__container--road">
                   <div class="photo-video__text-wrapper">
@@ -115,26 +115,26 @@
                   </div>
                   <div class="photo-video__wrapper">
                     <button class="photo-video__button photo-video__like" type="button">
-                      <svg width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
+                      <svg class="photo-video__svg-color" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
                         <g id="Page-3">
                           <g id="Core_3" transform="translate(-295.000000, -464.000000)">
                             <g id="thumb-up_3" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape-3" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                              <path id="Shape-3" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
                             </g>
                           </g>
                         </g>
                       </svg>
                     </button>
-                    <p class="photo-video__text">96</p>
+                    <p class="photo-video__text photo-video__text--roads">96</p>
                   </div>
                 </div>
               </div>
-              <div class="photo-video__blocks">
-                <a href="img/photo4.jpg" tabindex="0" aria-label="Фотография скалы-моста">
-                  <img class="photo-video__img photo-video__img--bridge" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="rock-bridge">
-                  <img class="photo-video__bridge" src="img/main-bridge-mobile@1x.jpg" width="324" height="267" alt="rock-bridge">
-                  <img class="photo-video__bridge-desktop" src="img/main-bridge-desktop@1x.jpg" width="400" height="267" alt="rock-bridge">
-                </a>
+              <div class="photo-video__blocks photo-video__blocks--bridge">
+                <picture class="photo-video__bridge-img" tabindex="0" aria-label="Фотография скалы-моста">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                  <img src="img/photo-bridge-mobile@1x.jpg" alt="rock-bridge">
+                </picture>
                 <div class="photo-video__container">
                   <div class="photo-video__text-wrapper">
                     <h3 class="photo-video__title">Мост Дьявола</h3>
@@ -142,11 +142,11 @@
                   </div>
                   <div class="photo-video__wrapper">
                     <button class="photo-video__button" type="button">
-                      <svg width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
+                      <svg class="photo-video__svg-color" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20">
                         <g id="Page-4">
                           <g id="Core_4" transform="translate(-295.000000, -464.000000)">
                             <g id="thumb-up_4" transform="translate(295.000000, 464.000000)">
-                              <path id="Shape-4" fill="#b2b2b2" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
+                              <path id="Shape-4" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"/>
                             </g>
                           </g>
                         </g>
@@ -161,9 +161,11 @@
           <div class="photo-video__film">
             <h3 class="photo-video__title photo-video__doubt">Все еще сомневаетесь?</h3>
             <p class="photo-video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="photo-video__video" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео о Седоне">
-            <img class="photo-video__video-tablet" src="img/video-tablet@1x.jpg" width="648" height="499" alt="Видео о Седоне">
-            <img class="photo-video__video-desktop" src="img/video-desktop@1x.jpg" width="800" height="499" alt="Видео о Седоне">
+            <picture class="photo-video__video-img">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+              <img src="img/video-mobile@1x.jpg" alt="Видео о Седоне">
+            </picture>
             <div class="photo-video__buttons">
               <div class="photo-video__trackbar">
                 <div class="photo-video__range-controls">

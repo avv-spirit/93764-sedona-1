@@ -25,44 +25,66 @@
   padding-top: 23px;
 }
 
-.photo-video__sunset {
-  display: none;
+.photo-video__sunset-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
 }
 
-.photo-video__sunset-desktop {
-  display: none;
+.photo-video__blocks--sunset {
+  margin: 0 auto;
+  margin-top: 23px;
 }
 
-.photo-video__cactus {
-  display: none;
+.photo-video__cactus-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
 }
 
-.photo-video__cactus-desktop {
-  display: none;
+.photo-video__blocks--plants {
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 1px;
 }
 
-.photo-video__roads {
-  display: none;
+.photo-video__roads-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
 }
 
-.photo-video__roads-desktop {
-  display: none;
+.photo-video__blocks--roads {
+  margin: 0 auto;
+  margin-top: 23px;
 }
 
-.photo-video__bridge {
-  display: none;
+.photo-video__bridge-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
 }
 
-.photo-video__bridge-desktop {
-  display: none;
+.photo-video__blocks--bridge {
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.photo-video__video-img {
+  width: 320px;
+  height: 201px;
+  margin: 0 auto;
+  margin-top: 36px;
 }
 
 .photo-video__container {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 20px;
+  padding-top: 6px;
   padding-bottom: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
   z-index: 1;
 }
 
@@ -131,22 +153,6 @@
   margin: 0;
   margin-left: 14px;
   margin-top: 2px;
-}
-
-.photo-video__blocks--plants {
-  margin-bottom: 1px;
-}
-
-.photo-video__video {
-  margin-top: 35px;
-}
-
-.photo-video__video-tablet {
-  display: none;
-}
-
-.photo-video__video-desktop {
-  display: none;
 }
 
 .photo-video__trackbar {
@@ -263,6 +269,10 @@
   fill: $trackbar-mobile-a;
 }
 
+.photo-video__svg-color {
+  fill: $active-gray;
+}
+
 @media (min-width: $tablet-width) {
   .photo-video {
     width: 768px;
@@ -278,8 +288,61 @@
   }
 
   .photo-video__blocks--sunset {
-    margin: 0 auto;
     margin-top: 69px;
+  }
+
+  .photo-video__sunset-img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__cactus-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__roads-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__bridge-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__video-img {
+    display: flex;
+    width: 768px;
+    height: 499px;
+    margin-top: 74px;
+    padding-left: 60px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__blocks--plants {
+    margin: 0;
+  }
+
+  .photo-video__blocks--roads {
+    margin: 0;
+  }
+
+  .photo-video__blocks--bridge {
+    margin: 0;
   }
 
   .photo-video__images {
@@ -299,58 +362,6 @@
     margin-left: 60px;
   }
 
-  .photo-video__img--sunset {
-    display: none;
-  }
-
-  .photo-video__img--cactus {
-    display: none;
-  }
-
-  .photo-video__img--roads {
-    display: none;
-  }
-
-  .photo-video__img--bridge {
-    display: none;
-  }
-
-  .photo-video__sunset {
-    display: inline-block;
-    width: 648px;
-  }
-
-  .photo-video__sunset-desktop {
-    display: none;
-  }
-
-  .photo-video__cactus {
-    display: inline-block;
-    width: 324px;
-  }
-
-  .photo-video__cactus-desktop {
-    display: none;
-  }
-
-  .photo-video__roads {
-    display: inline-block;
-    width: 324px;
-  }
-
-  .photo-video__roads-desktop {
-    display: none;
-  }
-
-  .photo-video__bridge {
-    display: inline-block;
-    width: 324px;
-  }
-
-  .photo-video__bridge-desktop {
-    display: none;
-  }
-
   .photo-video__container {
     flex-direction: row;
     padding-right: 29px;
@@ -362,8 +373,10 @@
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 0 20px;
+    padding-top: 6px;
     padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .photo-video__container--road {
@@ -406,8 +419,8 @@
     margin-top: 2px;
   }
 
-  .photo-video__blocks--plants {
-    margin-bottom: 0;
+  .photo-video__text--roads {
+    margin-right: 7px;
   }
 
   .photo-video__film {
@@ -502,6 +515,10 @@
   .photo-video__size:active {
     fill: $trackbar-active;
   }
+
+  .photo-video__svg-color {
+    fill: $svg-color;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -523,46 +540,10 @@
     margin-left: 0;
   }
 
-  .photo-video__sunset {
-    display: none;
-  }
-
-  .photo-video__sunset-desktop {
-    display: inline-block;
-    width: 1200px;
-  }
-
-  .photo-video__cactus {
-    display: none;
-  }
-
-  .photo-video__cactus-desktop {
-    display: inline-block;
-    width: 400px;
-  }
-
-  .photo-video__roads {
-    display: none;
-  }
-
-  .photo-video__roads-desktop {
-    display: inline-block;
-    width: 400px;
-  }
-
-  .photo-video__bridge {
-    display: none;
-  }
-
-  .photo-video__bridge-desktop {
-    display: inline-block;
-    width: 400px;
-  }
-
   .photo-video__container {
-    margin-top: -86px;
+    margin-top: -81px;
     margin-bottom: 0;
-    padding-top: 15px;
+    padding-top: 16px;
     color: $white;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
@@ -592,8 +573,12 @@
     flex-direction: row;
     justify-content: flex-start;
     margin: 0;
-    margin-left: 14px;
+    margin-left: 9px;
     margin-top: 2px;
+  }
+
+  .photo-video__text--roads {
+    margin-right: 8px;
   }
 
   .photo-video__blocks--plants {
@@ -604,23 +589,10 @@
     border-bottom: none;
   }
 
-  .photo-video__video {
-    margin: 0 auto;
-    margin-top: 74px;
+  .photo-video__video-img {
     width: 800px;
-    height: 500px;
-    background-image: url("../img/video-tablet@1x.jpg");
-  }
-
-  .photo-video__video-tablet {
-    display: none;
-  }
-
-  .photo-video__video-desktop {
-    display: inline-block;
-    margin: 0 auto;
     margin-top: 72px;
-    width: 800px;
+    padding-left: 0;
   }
 
   .photo-video__trackbar {
@@ -639,5 +611,9 @@
   .photo-video__buttons {
     margin-bottom: 79px;
     width: 800px;
+  }
+
+  .photo-video__svg-color {
+    fill: $white;
   }
 }
