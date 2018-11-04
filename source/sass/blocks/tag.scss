@@ -1,22 +1,40 @@
-.tag {
-  outline: 1px solid red;
-}
-
-.page-footer__wrapper {
-  width: 320px;
-  background-color: $white;
-}
-
-.page-footer__container {
-  width: 320px;
-
-  color: $black;
-  background-color: $white;
-}
-
 .tag__text {
+  margin-top: 36px;
+
   font-size: $line-height-desc;
   line-height: $line-height-title;
   font-weight: bold;
   text-align: center;
+}
+
+.tag__text-form {
+  margin-top: 21px;
+
+  font-size: $line-height-desc;
+  line-height: $line-height-title;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .tag__text {
+    margin-top: 44px;
+
+    font-size: $line-height-desc;
+    line-height: $line-height-title;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tag__text {
+    margin-top: 45px;
+    padding-right: 26px;
+
+    font-size: $line-height-desc;
+    line-height: $line-height-title;
+    font-weight: bold;
+    text-align: center;
+  }
 }

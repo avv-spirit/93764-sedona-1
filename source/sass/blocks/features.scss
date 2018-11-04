@@ -2,29 +2,36 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  outline: 1px solid red;
 }
 
 .features__blocks {
   display: flex;
   flex-direction: column;
   width: 320px;
-  outline: 1px solid red;
 
   color: $white;
   background-color: $nav;
 }
 
+.features__title--town {
+  margin-top: 68px;
+  margin-bottom: 9px;
+}
+
 .features__background {
+  display: flex;
+  margin: 0 auto;
+  width: 280px;
+
   color: $black;
 
-  background-color: $features-gray;
+  background-color: $input-gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .features__image {
   display: flex;
   width: 320px;
-  outline: 1px solid red;
 }
 
 .features__title {
@@ -34,7 +41,28 @@
   text-align: center;
 }
 
+.features__title--bridge {
+  margin-top: 39px;
+  margin-bottom: 8px;
+}
+
+.features__title--area {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.features__title--road {
+  margin-top: 27px;
+  margin-bottom: 8px;
+}
+
+.features__title--tourists {
+  margin-top: 27px;
+  margin-bottom: 8px;
+}
+
 .features__number {
+  margin: 0;
   font-size: $number-description;
   line-height: $line-height-desc;
   font-weight: normal;
@@ -46,4 +74,287 @@
   line-height: $line-height-desc;
   font-weight: normal;
   text-align: center;
+}
+
+.features__description--area {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 15px;
+}
+
+.features__description--road {
+  margin-top: 16px;
+  margin-bottom: 27px;
+  padding-left: 17px;
+  padding-right: 20px;
+}
+
+.features__description--tourists {
+  margin-top: 16px;
+  margin-bottom: 26px;
+  padding-left: 10px;
+  padding-right: 11px;
+}
+
+.features__description--town {
+  margin-bottom: 41px;
+  padding-left: 27px;
+  padding-right: 20px;
+}
+
+.features__blocks--bridge {
+  padding: 0;
+}
+
+.features__description--bridge {
+  padding-left: 22px;
+  padding-right: 23px;
+  margin-top: 16px;
+  margin-bottom: 39px;
+}
+
+.features__background--border {
+  border-bottom: none;
+}
+
+.features__wrap {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    flex-direction: row;
+    width: 768px;
+  }
+
+  .features__blocks {
+    flex-direction: row;
+    width: 768px;
+  }
+
+  .features__blocks--bridge {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 768px;
+    padding: 0;
+
+    color: $white;
+    background-color: $nav;
+  }
+
+  .features__blocks-description {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  .features__image {
+    width: 512px;
+    height: 256px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .features__title {
+    font-size: $line-height-desc;
+  }
+
+  .features__title--town {
+    margin: 0;
+    padding-top: 45px;
+    padding-bottom: 10px;
+  }
+
+  .features__description--town {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .features__title--bridge {
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+
+  .features__description--bridge {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 21px;
+  }
+
+  .features__background {
+    flex-direction: column;
+    width: 256px;
+    min-height: 256px;
+
+    border-bottom: none;
+  }
+
+  .features__title--area {
+    margin-top: 44px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .features__title--road {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features__title--tourists {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .features__description--area {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 9px;
+  }
+
+  .features__description--road {
+    margin-top: 22px;
+    margin-bottom: 27px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+
+  .features__description--tourists {
+    margin-top: 22px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features__wrap {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: 1200px;
+  }
+
+  .features__blocks {
+    width: 1200px;
+  }
+
+  .features__blocks--bridge {
+    width: 1200px;
+  }
+
+  .features__blocks-description {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .features__image {
+    width: 800px;
+  }
+
+  .features__title {
+    font-weight: bold;
+    font-size: $line-height-desc;
+    line-height: $line-height-title;
+  }
+
+  .features__title--town {
+    margin: 0 auto;
+    padding-top: 52px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .features__description--town {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .features__title--bridge {
+    margin-top: 53px;
+    margin-bottom: 10px;
+    margin-left: 124px;
+    margin-right: 125px;
+  }
+
+  .features__description--bridge {
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 21px;
+    margin-bottom: 39px;
+  }
+
+  .features__background {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    min-height: 256px;
+
+    color: $black;
+
+    background-color: $input-gray;
+    border-bottom: none;
+  }
+
+  .features__title--area {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .features__title--road {
+    margin-top: 44px;
+    margin-bottom: 10px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .features__title--tourists {
+    margin-top: 44px;
+    margin-bottom: 9px;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .features__description--area {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 9px;
+    padding-bottom: 15px;
+  }
+
+  .features__description--road {
+    margin-top: 22px;
+    margin-bottom: 27px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .features__description--tourists {
+    margin-top: 22px;
+    margin-bottom: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .features__wrap {
+    display: inline;
+  }
 }

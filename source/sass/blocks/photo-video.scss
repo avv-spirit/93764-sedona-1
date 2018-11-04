@@ -4,7 +4,6 @@
   width: 320px;
 
   background-color: $white;
-  outline: 1px solid red;
 }
 
 .photo-video__description {
@@ -12,20 +11,6 @@
   flex-direction: column;
 
   border-bottom: 1px solid $bottom-line;
-}
-
-.text__title {
-  font-size: $font-title;
-  line-height: $line-height-title;
-  font-weight: bold;
-  text-align: center;
-}
-
-.text__description {
-  font-size: $number-description;
-  line-height: $line-height-fill;
-  font-weight: normal;
-  text-align: center;
 }
 
 .photo-video__blocks {
@@ -40,15 +25,78 @@
   padding-top: 23px;
 }
 
+.photo-video__sunset-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photo-video__blocks--sunset {
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.photo-video__cactus-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photo-video__blocks--plants {
+  margin: 0 auto;
+  margin-top: 23px;
+  margin-bottom: 1px;
+}
+
+.photo-video__roads-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photo-video__blocks--roads {
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.photo-video__bridge-img {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photo-video__blocks--bridge {
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.photo-video__video-img {
+  width: 320px;
+  height: 201px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
 .photo-video__container {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 20px;
-  padding-bottom: 20px;
+  padding-top: 6px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1;
+}
+
+.photo-video__film {
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid $bottom-line;
 }
 
 .photo-video__title {
+  margin-top: 8px;
   margin-bottom: 0;
   font-size: $number-description;
   line-height: $line-height-fill;
@@ -57,7 +105,6 @@
 
 .photo-video__author {
   margin: 0;
-  margin-bottom: 3px;
   font-size: $number-description;
   line-height: $line-height-fill;
   font-weight: normal;
@@ -65,12 +112,17 @@
 }
 
 .photo-video__doubt {
+  margin-top: 32px;
   font-size: $font-title;
   line-height: $line-height-title;
   text-align: center;
 }
 
 .photo-video__desc {
+  display: inline-block;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 26px;
   font-size: $number-description;
   line-height: $line-height-fill;
   font-weight: normal;
@@ -91,10 +143,477 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 7px;
 }
 
 .photo-video__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   margin: 0;
-  padding: 0;
-  padding-left: 5px;
+  margin-left: 14px;
+  margin-top: 2px;
+}
+
+.photo-video__trackbar {
+  position: absolute;
+  top: -45px;
+  width: 280px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.photo-video__range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+  margin-top: 22px;
+}
+
+.photo-video__scale {
+  margin-left: 8%;
+  width: 235px;
+  height: 3px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.photo-video__bar {
+  height: 2px;
+}
+
+.photo-video__range-toggle {
+  position: absolute;
+  top: -4px;
+  width: 4px;
+  height: 4px;
+
+  background: $white;
+  border: 3px solid $white;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.photo-video__range-toggle--max {
+  left: 21%;
+}
+
+.photo-video__buttons {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  width: 280px;
+  height: 46px;
+  background-color: $input-gray;
+}
+
+.photo-video__replay {
+  margin-left: 19px;
+  margin-top: 9px;
+  width: 16px;
+  height: 20px;
+
+  fill: $trackbar-mobile;
+  background-color: $input-gray;
+  border: none;
+}
+
+.photo-video__replay:hover {
+  fill: $trackbar-mobile-h;
+}
+
+.photo-video__replay:active {
+  fill: $trackbar-mobile-a;
+}
+
+.photo-video__subtitles {
+  margin-left: auto;
+  margin-top: 10px;
+  width: 32px;
+  height: 20px;
+
+  fill: $trackbar-mobile;
+  background-color: $input-gray;
+  border: none;
+}
+
+.photo-video__subtitles:hover {
+  fill: $trackbar-mobile-h;
+}
+
+.photo-video__subtitles:active {
+  fill: $trackbar-mobile-a;
+}
+
+.photo-video__size {
+  margin-top: 10px;
+  margin-left: 31px;
+  margin-right: 29px;
+  width: 20px;
+  height: 20px;
+
+  fill: $trackbar-mobile;
+  background-color: $input-gray;
+  border: none;
+}
+
+.photo-video__size:hover {
+  fill: $trackbar-mobile-h;
+}
+
+.photo-video__size:active {
+  fill: $trackbar-mobile-a;
+}
+
+.photo-video__svg-color {
+  fill: $active-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video {
+    width: 768px;
+  }
+
+  .photo-video__description {
+    border: none;
+  }
+
+  .photo-video__blocks {
+    border: none;
+    background-color: $input-gray;
+  }
+
+  .photo-video__blocks--sunset {
+    margin-top: 69px;
+  }
+
+  .photo-video__sunset-img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__cactus-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__roads-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__bridge-img {
+    display: flex;
+    width: 100%;
+    height: 267px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__video-img {
+    display: flex;
+    width: 768px;
+    height: 499px;
+    margin-top: 74px;
+    padding-left: 60px;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .photo-video__blocks--plants {
+    margin: 0;
+  }
+
+  .photo-video__blocks--roads {
+    margin: 0;
+  }
+
+  .photo-video__blocks--bridge {
+    margin: 0;
+  }
+
+  .photo-video__images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-bottom: 57px;
+    width: 768px;
+  }
+
+  .photo-video__images-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 60px;
+  }
+
+  .photo-video__container {
+    flex-direction: row;
+    padding-right: 29px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+  }
+
+  .photo-video__container--sunset {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .photo-video__container--road {
+    background-color: $bck-road;
+  }
+
+  .photo-video__text-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-video__title {
+    margin-top: 9px;
+  }
+
+  .photo-video__doubt {
+    font-size: $interest;
+  }
+
+  .photo-video__desc {
+    width: 420px;
+    margin-top: 31px;
+  }
+
+  .photo-video__button {
+    background-color: $input-gray;
+  }
+
+  .photo-video__like {
+    background-color: $bck-road;
+  }
+
+  .photo-video__wrapper {
+    margin-left: auto;
+    margin-top: 22px;
+  }
+
+  .photo-video__text {
+    margin-left: 9px;
+    margin-top: 2px;
+  }
+
+  .photo-video__text--roads {
+    margin-right: 7px;
+  }
+
+  .photo-video__film {
+    border-bottom: none;
+  }
+
+  .photo-video__video {
+    display: none;
+  }
+
+  .photo-video__video-tablet {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 74px;
+  }
+
+  .photo-video__trackbar {
+    top: 12px;
+    width: 648px;
+    height: 93px;
+  }
+
+  .photo-video__scale {
+    margin-left: 93px;
+    margin-top: 45px;
+    width: 390px;
+  }
+
+  .photo-video__range-toggle--max {
+    left: 32%;
+  }
+
+  .photo-video__buttons {
+    margin-top: -105px;
+    margin-bottom: 35px;
+    width: 648px;
+    height: 93px;
+    background-color: transparent;
+  }
+
+  .photo-video__replay {
+    margin-left: 28px;
+    margin-top: 34px;
+    width: 16px;
+    height: 20px;
+
+    z-index: 2;
+    fill: $white;
+    background-color: transparent;
+    border: none;
+  }
+
+  .photo-video__replay:hover {
+    fill: $trackbar-hover;
+  }
+
+  .photo-video__replay:active {
+    fill: $trackbar-active;
+  }
+
+  .photo-video__subtitles {
+    margin-right: 22px;
+    margin-top: 35px;
+
+    z-index: 2;
+    fill: $white;
+    background-color: transparent;
+  }
+
+  .photo-video__subtitles:hover {
+    fill: $trackbar-hover;
+  }
+
+  .photo-video__subtitles:active {
+    fill: $trackbar-active;
+  }
+
+  .photo-video__size {
+    margin-top: 35px;
+    margin-left: 9px;
+    margin-right: 49px;
+
+    z-index: 2;
+    fill: $white;
+    background-color: transparent;
+  }
+
+  .photo-video__size:hover {
+    fill: $trackbar-hover;
+  }
+
+  .photo-video__size:active {
+    fill: $trackbar-active;
+  }
+
+  .photo-video__svg-color {
+    fill: $svg-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video {
+    width: 1200px;
+  }
+
+  .photo-video__blocks {
+    margin: 0 auto;
+  }
+
+  .photo-video__images {
+    margin-top: 46px;
+    margin-bottom: 69px;
+    width: 1200px;
+  }
+
+  .photo-video__images-wrapper {
+    margin-left: 0;
+  }
+
+  .photo-video__container {
+    margin-top: -81px;
+    margin-bottom: 0;
+    padding-top: 16px;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+
+  .photo-video__container--road {
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-video__title {
+    margin-top: 0;
+  }
+
+  .photo-video__button {
+    background-color: transparent;
+  }
+
+  .photo-video__wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 14px;
+  }
+
+  .photo-video__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 9px;
+    margin-top: 2px;
+  }
+
+  .photo-video__text--roads {
+    margin-right: 8px;
+  }
+
+  .photo-video__blocks--plants {
+    margin-bottom: 1px;
+  }
+
+  .photo-video__film {
+    border-bottom: none;
+  }
+
+  .photo-video__video-img {
+    width: 800px;
+    margin-top: 72px;
+    padding-left: 0;
+  }
+
+  .photo-video__trackbar {
+    width: 800px;
+    height: 93px;
+  }
+
+  .photo-video__scale {
+    width: 540px;
+  }
+
+  .photo-video__range-toggle--max {
+    left: 26%;
+  }
+
+  .photo-video__buttons {
+    margin-bottom: 79px;
+    width: 800px;
+  }
+
+  .photo-video__svg-color {
+    fill: $white;
+  }
 }

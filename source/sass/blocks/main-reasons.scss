@@ -1,12 +1,32 @@
 .main-reasons {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 320px;
+  min-height: 190px;
   background-color: $white;
-  outline: 1px solid red;
+}
+
+.main-reasons::before {
+  position: absolute;
+  z-index: 1;
+  top: 203px;
+  left: 0;
+
+  content: "";
+
+  width: 320px;
+  height: 45px;
+
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-triangle.svg");
 }
 
 .main-reasons__title {
+  margin-bottom: 14px;
+  padding-top: 22px;
+  padding-left: 31px;
+  padding-right: 33px;
   font-size: $font-title;
   line-height: $line-height-title;
   font-weight: bold;
@@ -14,8 +34,34 @@
 }
 
 .main-reasons__description {
+  padding-left: 12px;
+  padding-right: 14px;
   font-size: $number-description;
   line-height: $line-height-title;
   font-weight: normal;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-reasons {
+    width: 100%;
+  }
+
+  .main-reasons::before {
+    display: none;
+  }
+
+  .main-reasons__title {
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    font-size: $line-height-desc;
+  }
+
+  .main-reasons__description {
+    margin-top: 28px;
+    margin-bottom: 50px;
+  }
 }

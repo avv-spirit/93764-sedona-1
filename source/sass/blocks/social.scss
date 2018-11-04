@@ -1,36 +1,70 @@
 .social {
   display: block;
-
-  outline: 1px solid red;
-}
-
-.page-footer__social {
-  width: 320px;
-  margin: 0;
 }
 
 .social__list {
   display: flex;
   width: 156px;
-  margin: 0;
   margin-left: 45px;
 
   list-style: none;
 }
 
 .social__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 6px;
-  width: 46px;
-  height: 48px;
 
   color: $white;
 
   background-color: $nav;
 }
 
+.social__item:hover,
+.social__item:focus {
+  background-color: $hover-button;
+}
+
+.social__item:active {
+  background-color: $active-button;
+}
+
 .social__link {
-  background-color: $nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: $hover-button;
+}
+
+.social__link:active {
+  fill: $active-button;
+  background-color: $active-button;
+}
+
+.social__link:active path {
+  fill: $active-color;
+  background-color: $active-button;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+    margin-top: 34px;
+    margin-left: 13px;
+    width: 156px;
+
+    list-style: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-top: 35px;
+    margin-left: 84px;
+    width: 156px;
+  }
 }
