@@ -2,18 +2,33 @@
   display: flex;
   flex-direction: column;
   width: 320px;
+  z-index: 1;
 }
 
-.map__settings {
+.map__img {
   position: relative;
+  display: flex;
+  width: 320px;
+  height: 350px;
 
   background-color: $map-color;
 }
 
-.map__marker {
+.map__img::before {
   position: absolute;
+  content: "";
   top: 46%;
   left: 46%;
+  z-index: 1;
+
+  width: 27px;
+  height: 27px;
+
+  background-image: url("../img/icon-map-marker.svg");
+}
+
+.map__interactive {
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,19 +36,17 @@
     width: 768px;
   }
 
-  .map__settings {
+  .map__img {
+    width: 768px;
+  }
+
+  .map__img::before {
+    left: 48%;
+  }
+
+  .map__interactive {
     width: 768px;
     height: 350px;
-
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-  }
-
-  .map__size {
-    display: none;
-  }
-
-  .map__marker {
-    left: 48%;
   }
 }
 
@@ -44,13 +57,15 @@
     width: 1200px;
   }
 
-  .map__settings {
+  .map__img {
     width: 1200px;
-
-    background-image: url("../img/bg-map-desktop@1x.jpg");
   }
 
-  .map__marker {
+  .map__img::before {
     left: 49%;
+  }
+
+  .map__interactive {
+    width: 1200px;
   }
 }

@@ -88,3 +88,15 @@
   line-height: $line-height-fill;
   font-weight: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .popup {
+    width: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popup {
+    width: 800px;
+  }
+}

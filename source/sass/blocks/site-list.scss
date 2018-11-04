@@ -4,7 +4,7 @@
   width: 320px;
   min-height: 280px;
 
-  background-color: $white;
+  background-color: $nav;
 }
 
 .site-list__item--active {
@@ -64,6 +64,8 @@
     min-height: 56px;
     margin: 0 auto;
     padding: 0;
+
+    background-color: $white;
   }
 
   .site-list__item {

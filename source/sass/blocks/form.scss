@@ -38,6 +38,16 @@
   border: none;
 }
 
+.form__feeling--position {
+  margin-top: 18px;
+  margin-bottom: -12px;
+}
+
+.form__feeling--checkbox {
+  margin-top: 13px;
+  margin-bottom: -21px;
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: row;
@@ -49,6 +59,16 @@
   line-height: $line-height-title;
   font-weight: bold;
   text-align: center;
+}
+
+.form__legend--exptrience {
+  margin-right: 0;
+}
+
+.form__legend--checkbox {
+  margin: 0 auto;
+  padding-bottom: 5px;
+  width: 300px;
 }
 
 .form__button-find {
@@ -362,11 +382,6 @@
   border-color: $dot;
 }
 
-.form__feeling--position {
-  margin-top: 18px;
-  margin-bottom: -12px;
-}
-
 .form__checkbox-type {
   margin-top: 26px;
   margin-bottom: 54px;
@@ -503,6 +518,30 @@
     margin-bottom: 8px;
   }
 
+  .form__general--mask {
+    position: relative;
+  }
+
+  .form__general--mask::before {
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 1px;
+    top: 25px;
+    left: 60px;
+    background: $absolute-line;
+  }
+
+  .form__general--mask::after {
+    position: absolute;
+    content: "";
+    width: 125px;
+    height: 1px;
+    top: 25px;
+    right: 60px;
+    background: $absolute-line;
+  }
+
   .form__general--emotions {
     width: 648px;
     margin: 0 auto;
@@ -525,7 +564,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 78px;
     margin-bottom: 10px;
     width: 550px;
@@ -728,6 +767,11 @@
     margin: 0 auto;
   }
 
+  .form__general--mask::before,
+  .form__general--mask::after {
+    display: none;
+  }
+
   .form__content--box {
     padding-left: 90px;
   }
@@ -880,7 +924,7 @@
     justify-content: center;
     width: 1100px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 25px;
   }
 
   .form__button-find {
