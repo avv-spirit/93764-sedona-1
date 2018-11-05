@@ -1,11 +1,23 @@
 .popup {
-  display: none;
+  display: flex;
   flex-direction: column;
   width: 320px;
 
   color: $black;
   background-color: $white;
   box-shadow: 0 7px 25px 1px lightgrey;
+}
+
+.popup-succes {
+  display: none;
+  position: absolute;
+  bottom: 593px;
+}
+
+.popup-error {
+  display: none;
+  position: absolute;
+  bottom: 705px;
 }
 
 .popup__title {
@@ -48,7 +60,7 @@
   border: none;
 }
 
-.popup__rewiew {
+.popup__close {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -92,11 +104,75 @@
 @media (min-width: $tablet-width) {
   .popup {
     width: 400px;
+    height: 347px;
+  }
+
+  .popup-succes {
+    bottom: 505px;
+    left: 64px;
+    width: 640px;
+    z-index: 2;
+  }
+
+  .popup-error {
+    bottom: 344px;
+    left: 184px;
+    z-index: 2;
+  }
+
+  .popup__title {
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: $title-error;
+    line-height: $nav-list-item;
+  }
+
+  .popup__description {
+    margin-left: 60px;
+    margin-right: 55px;
+    padding-bottom: 10px;
+    width: 280px;
+  }
+
+  .popup__description--comment {
+    width: 420px;
+    margin-left: 110px;
+    padding-bottom: 10px;
+  }
+
+  .popup__error {
+    width: 272px;
+
+    color: $white;
+    font-size: $line-height-desc;
+  }
+
+  .popup__background {
+    margin-top: 24px;
+    width: 640px;
+    height: 146px;
+  }
+
+  .popup__close {
+    margin-top: 44px;
+    margin-bottom: 0;
+    width: 458px;
+    height: 58px;
+    font-size: $line-height-desc;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .popup {
-    width: 800px;
+  .popup-succes {
+    bottom: 503px;
+    left: 279px;
+  }
+
+  .popup-error {
+    left: 400px;
+    bottom: 232px;
   }
 }

@@ -5,16 +5,23 @@
   z-index: 1;
 }
 
-.map__img {
+.map--img {
   position: relative;
   display: flex;
   width: 320px;
   height: 350px;
 
   background-color: $map-color;
+  background-image: url("../img/bg-map-mobile@1.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 640px auto;
+    background-position: 53% 30%;
+  }
 }
 
-.map__img::before {
+.map--img::before {
   position: absolute;
   content: "";
   top: 46%;
@@ -36,11 +43,19 @@
     width: 768px;
   }
 
-  .map__img {
+  .map--img {
     width: 768px;
+
+    background-image: url("../img/bg-map-tablet@1.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1536px auto;
+      background-position: 53% 30%;
+    }
   }
 
-  .map__img::before {
+  .map--img::before {
     left: 48%;
   }
 
@@ -57,8 +72,16 @@
     width: 1200px;
   }
 
-  .map__img {
+  .map--img {
     width: 1200px;
+
+    background-image: url("../img/bg-map-desktop@1.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400px auto;
+      background-position: 53% 30%;
+    }
   }
 
   .map__img::before {
