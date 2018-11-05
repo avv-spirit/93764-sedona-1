@@ -270,6 +270,8 @@
   padding-top: 15px;
   padding-bottom: 17px;
   padding-left: 24px;
+  width: 255px;
+  height: 26px;
 }
 
 .form__content--contacts::before {
@@ -301,6 +303,8 @@
   padding-top: 15px;
   padding-bottom: 17px;
   padding-left: 24px;
+  width: 255px;
+  height: 26px;
 }
 
 .form__content--mail::before {
@@ -587,6 +591,8 @@
     flex-grow: 0;
     width: 324px;
     margin-top: 57px;
+    padding-left: 10px;
+    padding-right: 19px;
   }
 
   .form__description {
@@ -623,10 +629,12 @@
   .form__input--contacts {
     margin-right: 23px;
     margin-bottom: 0;
+    width: 624px;
   }
 
   .form__input--mail {
     margin-right: 23px;
+    width: 624px;
   }
 
   .form__input--name {
@@ -929,6 +937,8 @@
 
   .form__button-find {
     width: 480px;
+    padding-left: 21px;
+    padding-right: 20px;
   }
 
   .form__feeling--position {
