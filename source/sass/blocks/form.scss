@@ -775,9 +775,16 @@
     margin: 0 auto;
   }
 
-  .form__general--mask::before,
+  .form__general--mask::before {
+    width: 280px;
+    top: 25px;
+    left: 120px;
+  }
+
   .form__general--mask::after {
-    display: none;
+    width: 280px;
+    top: 25px;
+    right: 120px;
   }
 
   .form__content--box {
@@ -835,33 +842,6 @@
 
   .form__legend--checkbox {
     margin-bottom: 0;
-  }
-
-  .form__legend-lines {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 110px;
-  }
-
-  .form__legend-lines::before,
-  .form__legend-lines::after {
-    content: "";
-
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 20px;
-    height: 1px;
-
-    background: $absolute-line;
-  }
-
-  .form__legend-lines::before {
-    margin-right: 50px;
-  }
-
-  .form__legend-lines::after {
-    margin-left: 50px;
   }
 
   .form__legend--experience {
@@ -953,7 +933,7 @@
     padding-left: 27px;
   }
 
-  .form__checkbox--rocks {
+  .form__checkbox-rocks {
     width: 250px;
     padding-left: 9px;
     padding-right: 0;
@@ -972,7 +952,7 @@
     height: 58px;
   }
 
-  .form__content--hidden {
+  .form__content-hidden {
     display: none;
   }
 
