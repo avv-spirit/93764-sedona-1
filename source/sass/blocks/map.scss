@@ -36,6 +36,7 @@
 
 .map__interactive {
   z-index: 2;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -74,8 +75,9 @@
 
   .map--img {
     width: 1200px;
+    height: 350px;
 
-    background-image: url("../img/bg-map-desktop@1.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
