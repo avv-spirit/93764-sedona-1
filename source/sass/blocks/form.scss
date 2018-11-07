@@ -573,7 +573,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1px;
-    margin-left: 78px;
+    margin-left: 84px;
     margin-bottom: 10px;
     width: 550px;
   }
@@ -586,11 +586,12 @@
   }
 
   .form__legend--checkbox {
-    margin: 0 auto;
     margin-bottom: 24px;
     padding-top: 0;
     padding-bottom: 5px;
-    width: 300px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 640px;
   }
 
   .form__legend--experience {
@@ -856,7 +857,10 @@
   }
 
   .form__legend--checkbox {
-    margin-bottom: 0;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin: 0 auto;
+    width: 1200px;
   }
 
   .form__legend--experience {
@@ -923,7 +927,8 @@
 
   .form__feeling--checkbox {
     width: 1200px;
-    padding-top: 0;
+    margin-bottom: 8px;
+    padding: 0;
   }
 
   .form__boxes {
