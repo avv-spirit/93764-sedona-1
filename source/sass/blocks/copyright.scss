@@ -33,6 +33,7 @@
 @media (min-width: $tablet-width) {
   .copyright__text {
     width: 100px;
+    padding-left: 4px;
   }
 
   .copyright__logo {
@@ -46,7 +47,12 @@
 
 @media (min-width: $desktop-width) {
   .copyright__text {
-    padding-top: 1px;
+    padding-top: 2px;
     padding-left: 26px;
+  }
+
+  .copyright__logo {
+    padding-top: 3px;
+    padding-left: 8px;
   }
 }

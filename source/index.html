@@ -5,26 +5,35 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <a class="page-header__logo-image">
-          <img class="page-header__logo-size" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
-        </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <a class="main-nav__logo-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__logo-size" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button">
-            <!--<svg class="main-nav__cross main-nav--closed" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
+            <svg class="main-nav__cross" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
               <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-            </svg>-->
-            <!--<svg class="main-nav__menu" xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 22.928 21.982">
+            </svg>
+            <svg class="main-nav__menu" xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 22.928 21.982">
               <g>
                 <rect width="22.928" height="3.964"/>
                 <rect y="9.009" width="22.928" height="3.964"/>
                 <rect y="18.018" width="22.928" height="3.964"/>
               </g>
             </svg>
-            <span class="visually-hidden">Открыть меню</span>-->
+            <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -54,8 +63,8 @@
               <p class="features__description features__description--town">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <picture class="features__image">
-              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
               <img class="features__city" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город">
             </picture>
           </div>
@@ -85,7 +94,7 @@
               </div>
             </li>
             <li class="recommendations__item  recommendations__item--gift">
-              <svg class="recommendations__gift" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="57" height="37" viewBox="0 0 63 75.084">
+              <svg class="recommendations__gift" xmlns="http://www.w3.org/2000/svg" width="57" height="37" viewBox="0 0 63 75.084">
                 <path d="M60.165,22.23h-0.103H35.758c13.604-6.815,14.688-11.115,14.188-13.52c-1.145-3.916-5.604-6.938-9.848-5.341 c-5.484,2.063-7.029,10.262-8.514,16.19C29.69,13.561,27.858,5.91,23.573,2.034c-1.242-1.125-3.049-2.237-5.676-2.003 c-3.965,0.352-9.652,5.317-7.344,10.849c2.217,5.313,9.539,8.67,14.354,11.35H2.834C1.275,22.23,0,23.506,0,25.065V36.25 c0,1.559,1.275,2.834,2.835,2.834h0.27v35.999h56.958V39.084h0.104c1.561,0,2.835-1.275,2.835-2.834V25.065 C63,23.506,61.725,22.23,60.165,22.23z M41.766,5.873c2.07-0.306,4.907,1.283,5.176,3.171c0.386,2.723-3.349,5.192-5.008,6.343 c-2.484,1.723-4.853,2.611-7.178,4.006C35.628,15.748,37.268,6.539,41.766,5.873z M19.232,15.721 c-2.19-1.467-6.444-4.378-6.342-7.678c0.11-3.552,5.655-6.491,8.68-3.839c3.797,3.331,5.625,10.972,7.01,16.357 C25.381,19.042,22.35,17.808,19.232,15.721z M25.114,72.147H6.042V39.084h19.072V72.147z M25.114,36.084H3V25.23h22.114V36.084z  M35.115,72.146h-7.063V25.23h7.063V72.146z M57.125,72.147H38.053V39.084h19.072V72.147z M60,36.084H38.053V25.23H60V36.084z"/>
               </svg>
               <div class="recommendations__wrapper recommendations__wrapper--gift">
@@ -119,8 +128,8 @@
               <p class="features__description features__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <picture class="features__image">
-              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
               <img class="features__bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
             </picture>
           </div>
@@ -149,12 +158,8 @@
             <a class="search-hotel__button" href="#" tabindex="0" aria-label="Найти гостиницу">Найти гостиницу</a>
           </div>
         </section>
-        <div class="map map__settings">
-          <img class="map__size" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Мобильная версия карты Седоны">
-          <svg class="map__marker" xmlns="http://www.w3.org/2000/svg" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27">
-            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-          </svg>
+        <div class="map map--img">
+          <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704698.5417575222!2d-112.07416340815124!3d34.86598644413355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1541358348199" width="320" height="350" style="..." allowfullscreen></iframe>
         </div>
       </main>
       <footer class="page-footer">
@@ -169,8 +174,8 @@
                   <span class="visually-hidden">Twitter</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15">
                     <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006
-                  1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
-                  1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z">
+                    1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
+                    1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z">
                     </path>
                   </svg>
                 </a>
@@ -204,5 +209,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/toggle-menu.js"></script>
   </body>
 </html>

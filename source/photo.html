@@ -5,18 +5,27 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div class="body-wrapper">
       <header class="page-header">
-        <a class="page-header__logo-image" href="index.html" tabindex="0" aria-label="Перейти на Главную страницу">
-          <img class="page-header__logo-size" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
-        </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <a class="main-nav__logo-image" href="index.html" tabindex="0" aria-label="Перейти на Главную страницу">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="main-nav__logo-size" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
+            </picture>
+          </a>
           <button class="main-nav__toggle" type="button">
-            <!--<svg class="main-nav__cross" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
+            <svg class="main-nav__cross" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  width="23" height="22" viewBox="0 0 22.199 22.199">
               <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-            </svg>-->
+            </svg>
             <svg class="main-nav__menu" xmlns="http://www.w3.org/2000/svg" width="23" height="21" viewBox="0 0 22.928 21.982">
               <g>
                 <rect width="22.928" height="3.964"/>
@@ -48,11 +57,13 @@
           </div>
           <div class="photo-video__images">
             <div class="photo-video__blocks photo-video__blocks--sunset">
-              <picture class="photo-video__sunset-img" tabindex="0" aria-label="Фотография заката">
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                <img src="img/photo-sunset-mobile@1x.jpg" alt="Sunset">
-              </picture>
+              <a href="#" tabindex="0" aria-label="Фотография заката">
+                <picture class="photo-video__sunset-img">
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Sunset">
+                </picture>
+              </a>
               <div class="photo-video__container photo-video__container--sunset">
                 <div class="photo-video__text-wrapper">
                   <h3 class="photo-video__title">Неродные просторы</h3>
@@ -76,11 +87,13 @@
             </div>
             <div class="photo-video__images-wrapper">
               <div class="photo-video__blocks photo-video__blocks--plants">
-                <picture class="photo-video__cactus-img" tabindex="0" aria-label="Фотография растительности">
-                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-                  <img src="img/photo-cactus-mobile@1x.jpg" alt="plants">
-                </picture>
+                <a href="#" tabindex="0" aria-label="Фотография растительности">
+                  <picture class="photo-video__cactus-img">
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="plants">
+                  </picture>
+                </a>
                 <div class="photo-video__container">
                   <div class="photo-video__text-wrapper">
                     <h3 class="photo-video__title">Местная растительность</h3>
@@ -103,11 +116,13 @@
                 </div>
               </div>
               <div class="photo-video__blocks photo-video__blocks--roads">
-                <picture class="photo-video__roads-img" tabindex="0" aria-label="Фотография дороги">
-                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-                  <img src="img/photo-roads-mobile@1x.jpg" alt="roads">
-                </picture>
+                <a href="#" tabindex="0" aria-label="Фотография дороги">
+                  <picture class="photo-video__roads-img">
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
+                    <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="roads">
+                  </picture>
+                </a>
                 <div class="photo-video__container photo-video__container--road">
                   <div class="photo-video__text-wrapper">
                     <h3 class="photo-video__title">Дорога на север</h3>
@@ -130,11 +145,13 @@
                 </div>
               </div>
               <div class="photo-video__blocks photo-video__blocks--bridge">
-                <picture class="photo-video__bridge-img" tabindex="0" aria-label="Фотография скалы-моста">
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-                  <img src="img/photo-bridge-mobile@1x.jpg" alt="rock-bridge">
-                </picture>
+                <a href="#" tabindex="0" aria-label="Фотография скалы-моста">
+                  <picture class="photo-video__bridge-img">
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="rock-bridge">
+                  </picture>
+                </a>
                 <div class="photo-video__container">
                   <div class="photo-video__text-wrapper">
                     <h3 class="photo-video__title">Мост Дьявола</h3>
@@ -162,9 +179,9 @@
             <h3 class="photo-video__title photo-video__doubt">Все еще сомневаетесь?</h3>
             <p class="photo-video__desc">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <picture class="photo-video__video-img">
-              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
-              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-              <img src="img/video-mobile@1x.jpg" alt="Видео о Седоне">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео о Седоне">
             </picture>
             <div class="photo-video__buttons">
               <div class="photo-video__trackbar">
@@ -246,5 +263,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/toggle-menu.js"></script>
   </body>
 </html>
