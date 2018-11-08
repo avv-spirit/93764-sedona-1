@@ -12,7 +12,7 @@
   height: 350px;
 
   background-color: $map-color;
-  background-image: url("../img/bg-map-mobile@1.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
@@ -47,7 +47,7 @@
   .map--img {
     width: 768px;
 
-    background-image: url("../img/bg-map-tablet@1.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
