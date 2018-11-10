@@ -112,10 +112,7 @@
   }
 
   .main-nav--opened .main-nav__menu {
-    position: absolute;
-    top: 223px;
-    left: 0;
-    fill: $nav;
+    display: none;
   }
 
   .main-nav--nojs .main-nav__toggle {

@@ -21,7 +21,8 @@
 }
 
 .photo-video__link {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
+  margin-left: 20px;
 }
 
 .photo-video__img {
@@ -291,6 +292,10 @@
     background-color: $input-gray;
   }
 
+  .photo-video__link {
+    margin: 0 auto;
+  }
+
   .photo-video__blocks--sunset {
     margin-top: 69px;
   }
@@ -332,9 +337,12 @@
     width: 768px;
     height: 499px;
     margin-top: 74px;
-    padding-left: 60px;
     overflow: hidden;
     align-items: center;
+  }
+
+  .photo-video__video-size {
+    margin: 0 auto;
   }
 
   .photo-video__blocks--plants {

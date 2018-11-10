@@ -125,6 +125,7 @@
 @media (min-width: $tablet-width) {
   .features {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 768px;
   }
 
